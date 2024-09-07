@@ -1,12 +1,12 @@
 import { createBrowserRouter } from "react-router-dom";
 import { NotFound } from "./pages/404";
-import { Introduction } from "./pages/app/home/introduction";
+import { PortfolioMain } from "./pages/app/main";
 import { ProjectsHome } from "./pages/app/projects/projects";
 
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <Introduction />,
+    element: <PortfolioMain />,
     errorElement: <NotFound />,
   },
   {
