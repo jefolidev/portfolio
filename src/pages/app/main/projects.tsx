@@ -5,10 +5,10 @@ export function ProjectsMain() {
   return (
     <div className="flex h-screen w-full flex-col items-center justify-center bg-primary">
       <div className="self-start py-12 pl-40">
-        <h1 className="text-white font-geologica py-4 text-5xl font-bold">
+        <h1 className="py-4 font-geologica text-5xl font-bold text-white">
           Meus Projetos
         </h1>
-        <span className="text-gray-200 font-maven block h-[41px] max-w-[900px] text-sm">
+        <span className="block h-[41px] max-w-[900px] font-maven text-sm text-gray-200">
           Navegue pelo meu portfólio, onde encontrará interfaces bem trabalhadas
           e aplicações bem desenvolvidas. Esses projetos influenciaram muito no
           meu aprendizado e no aprimoramento da minha carreira.
