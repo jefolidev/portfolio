@@ -8,7 +8,7 @@ export function NavBar() {
   const navigate = useNavigate();
 
   return (
-    <div className="fixed bottom-5 left-1/2 z-50 flex h-10 w-48 -translate-x-1/2 transform items-center justify-evenly gap-1 rounded-full bg-[#121116] shadow-lg shadow-black/20">
+    <nav className="fixed bottom-5 left-1/2 z-50 flex h-10 w-48 -translate-x-1/2 transform items-center justify-evenly gap-1 rounded-full bg-[#121116] shadow-lg shadow-black/20">
       <button onClick={() => navigate("/")}>
         <HomeIcon />
       </button>
@@ -22,6 +22,6 @@ export function NavBar() {
       <button>
         <SunIcon />
       </button>
-    </div>
+    </nav>
   );
 }

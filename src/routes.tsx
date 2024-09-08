@@ -1,17 +1,24 @@
 import { createBrowserRouter } from "react-router-dom";
 import { NotFound } from "./pages/404";
-import { PortfolioMain } from "./pages/app/main";
-import { ProjectsHome } from "./pages/app/projects/projects";
+import { AppLayout } from "./pages/_layout/app";
+import { PortfolioRoot } from "./pages/app/main/_index";
+import { ProjectsRoot } from "./pages/app/projects/_index";
 
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <PortfolioMain />,
+    element: <AppLayout />,
     errorElement: <NotFound />,
-  },
-  {
-    path: "/projects",
-    element: <ProjectsHome />,
-    errorElement: <NotFound />,
+    children: [
+      {
+        path: "/",
+        element: <PortfolioRoot />,
+      },
+      {
+        path: "/projects",
+        element: <ProjectsRoot />,
+        errorElement: <NotFound />,
+      },
+    ],
   },
 ]);

@@ -8,6 +8,8 @@ export default {
         secondary: "#1a1820",
         terciary: "#26252E",
         quartiary: "#1C1922",
+        cardPrimary: "#26252E",
+        strokeDefault: "#747474",
       },
       fontFamily: {
         maven: ["Maven Pro", "sans-serif"],
