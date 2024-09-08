@@ -20,7 +20,7 @@ export function PerfilIcon() {
         ></path>
       </svg>
       <AltBox
-        className="-top-9 left-6 text-[0.8rem] group-hover/perfil:visible"
+        className="-top-8 left-6 text-[0.8rem] group-hover/perfil:visible"
         name="Sobre"
       />
     </div>

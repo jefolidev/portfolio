@@ -20,7 +20,7 @@ export function ProjectsIcon() {
         ></path>
       </svg>
       <AltBox
-        className="-top-9 left-16 text-[0.8rem] group-hover/projects:visible"
+        className="-top-8 left-16 text-[0.8rem] group-hover/projects:visible"
         name="Projetos"
       />
     </div>

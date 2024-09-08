@@ -20,7 +20,7 @@ export function HomeIcon() {
         ></path>
       </svg>
       <AltBox
-    className="-left-4 -top-9 text-[0.8rem] group-hover/home:visible"
+        className="-left-3.5 -top-8 text-[0.8rem] group-hover/home:visible"
         name="Início"
       />
     </div>
