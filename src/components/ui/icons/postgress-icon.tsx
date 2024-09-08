@@ -1,4 +1,4 @@
-import { AltBox } from "./alt-box";
+import { AltBox } from "../alt-box";
 
 export function PostgressIcon() {
   return (

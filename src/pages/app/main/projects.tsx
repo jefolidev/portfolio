@@ -1,5 +1,5 @@
-import { ButtonPrimary } from "../../../components/button-primary";
 import { ProjectCard } from "../../../components/project-card";
+import { ButtonPrimary } from "../../../components/ui/button-primary";
 
 export function ProjectsMain() {
   return (

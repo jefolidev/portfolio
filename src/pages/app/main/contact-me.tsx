@@ -1,5 +1,7 @@
 import ArrowRight from "../../../assets/arrow-right.svg";
-import { GithubIcon } from "../../../components/github-icon";
+import { EmailIcon } from "../../../components/ui/icons/email-icon";
+import { GitHubIcon } from "../../../components/ui/icons/github-icon";
+import { LinkedinIcon } from "../../../components/ui/icons/linkedin-icon";
 
 export function ContactMe() {
   return (
@@ -16,21 +18,21 @@ export function ContactMe() {
         <div className="grid grid-flow-dense grid-cols-2 gap-2">
           <button className="flex h-[55px] w-[191px] items-center justify-between gap-2 rounded-md border border-transparent bg-terciary px-6 transition-all hover:border-[#9D98A9] hover:brightness-110">
             <div className="flex items-center justify-start gap-3">
-              <GithubIcon />
+              <LinkedinIcon />
               <p className="font-maven text-white">Linkedin</p>
             </div>
             <img src={ArrowRight} alt="" />
           </button>
           <button className="flex h-[55px] w-[191px] items-center justify-between gap-2 rounded-md border border-transparent bg-terciary px-6 transition-all hover:border-[#9D98A9] hover:brightness-110">
             <div className="flex items-center justify-start gap-3">
-              <GithubIcon />
+              <GitHubIcon />
               <p className="font-maven text-white">GitHub</p>
             </div>
             <img src={ArrowRight} alt="" />
           </button>
           <button className="col-span-2 flex h-[55px] items-center justify-between gap-2 rounded-md border border-transparent bg-terciary px-6 transition-all hover:border-[#9D98A9] hover:brightness-110">
             <div className="flex items-center justify-start gap-3">
-              <GithubIcon />
+              <EmailIcon />
               <p className="font-maven text-white">Email</p>
             </div>
             <img src={ArrowRight} alt="" />

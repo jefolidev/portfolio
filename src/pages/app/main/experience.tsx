@@ -1,11 +1,11 @@
-import { DotNet } from "../../../components/dot-net";
-import { Firebird } from "../../../components/firebird-icon";
 import { JobCard } from "../../../components/jobs-cards";
-import { NodeIcon } from "../../../components/node-icon";
-import { PostgressIcon } from "../../../components/postgress-icon";
-import { PrismaIcon } from "../../../components/prisma-icon";
-import { ReactIcon } from "../../../components/react-icon";
-import { TailWindIcon } from "../../../components/tailwind-icon";
+import { DotNet } from "../../../components/ui/dot-net";
+import { Firebird } from "../../../components/ui/icons/firebird-icon";
+import { NodeIcon } from "../../../components/ui/icons/node-icon";
+import { PostgressIcon } from "../../../components/ui/icons/postgress-icon";
+import { PrismaIcon } from "../../../components/ui/icons/prisma-icon";
+import { ReactIcon } from "../../../components/ui/icons/react-icon";
+import { TailWindIcon } from "../../../components/ui/icons/tailwind-icon";
 import timeline from "../../assets/timeline.svg";
 
 export function Experiences() {

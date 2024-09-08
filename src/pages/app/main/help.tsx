@@ -1,8 +1,8 @@
 import { CardHelp } from "../../../components/card-help";
-import { HardDisk } from "../../../components/hard-disk";
-import { LampIcon } from "../../../components/lamp-icon";
-import { PencilIcon } from "../../../components/pencil-icon";
-import { ScreenIcon } from "../../../components/screen-icon";
+import { HardDisk } from "../../../components/ui/icons/hard-disk";
+import { LampIcon } from "../../../components/ui/icons/lamp-icon";
+import { PencilIcon } from "../../../components/ui/icons/pencil-icon";
+import { ScreenIcon } from "../../../components/ui/icons/screen-icon";
 
 export default function HowCanIHelp() {
   return (
