@@ -1,7 +1,10 @@
+import { useNavigate } from "react-router-dom";
 import { ProjectCard } from "../../../components/project-card";
 import { ButtonPrimary } from "../../../components/ui/button-primary";
 
 export function ProjectsMain() {
+  const navigate = useNavigate();
+  navigate("/projects");
   return (
     <div className="flex h-screen w-full flex-col items-center justify-center bg-primary">
       <div className="self-start py-12 pl-40">
@@ -16,7 +19,10 @@ export function ProjectsMain() {
       </div>
       <div className="flex h-96 w-[98%] flex-col justify-center gap-4 rounded-xl bg-secondary">
         <div className="mr-[6.5rem] self-end">
-          <ButtonPrimary text="Ver todos" />
+          <ButtonPrimary
+            text="Ver todos"
+            onClick={() => navigate("/projects")}
+          />
         </div>
         <div className="grid grid-flow-col grid-rows-2 items-center justify-evenly gap-5">
           <ProjectCard />
