@@ -15,7 +15,7 @@ export function ProjectsMain() {
         </span>
       </div>
       <div className="flex h-96 w-[98%] flex-col justify-center gap-4 rounded-xl bg-secondary">
-        <div className="self-end px-[8.8rem]">
+        <div className="mr-[6.5rem] self-end">
           <ButtonPrimary text="Ver todos" />
         </div>
         <div className="grid grid-flow-col grid-rows-2 items-center justify-evenly gap-5">

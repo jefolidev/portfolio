@@ -1,3 +1,4 @@
+import { ContactMe } from "./contact-me";
 import { Experiences } from "./experience";
 import HowCanIHelp from "./help";
 import { Introduction } from "./introduction";
@@ -10,6 +11,7 @@ export function PortfolioMain() {
       <ProjectsMain />
       <Experiences />
       <HowCanIHelp />
+      <ContactMe />
     </>
   );
 }

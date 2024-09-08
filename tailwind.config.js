@@ -16,6 +16,7 @@ export default {
       },
       backgroundImage: {
         perfil: "url('./src/pages/assets/fotominhacircle.png')",
+        dotted: "url('./src/assets/dotted-background.png')",
       },
     },
   },

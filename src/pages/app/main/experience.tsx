@@ -10,7 +10,7 @@ import timeline from "../../assets/timeline.svg";
 
 export function Experiences() {
   return (
-    <div className="flex h-screen w-full flex-col items-center justify-center bg-primary">
+    <div className="flex h-[900px] min-h-screen w-full flex-col items-center justify-center space-y-5 bg-primary">
       <div className="self-start py-12 pl-40">
         <h1 className="py-4 font-geologica text-5xl font-bold text-white">
           Minhas experiências

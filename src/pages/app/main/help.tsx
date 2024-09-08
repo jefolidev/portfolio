@@ -1,3 +1,37 @@
+import { CardHelp } from "../../../components/card-help";
+import { HardDisk } from "../../../components/hard-disk";
+import { LampIcon } from "../../../components/lamp-icon";
+import { PencilIcon } from "../../../components/pencil-icon";
+import { ScreenIcon } from "../../../components/screen-icon";
+
 export default function HowCanIHelp() {
-  return <div className="h-screen w-full bg-primary">help</div>;
+  return (
+    <div className="flex h-screen w-full flex-col items-end justify-center space-y-12 bg-primary bg-dotted px-36">
+      <h1 className="text-center font-geologica text-5xl font-bold text-white">
+        Colaborando com entrega de resultados e criando resultados impactantes
+      </h1>
+      <div className="flex gap-5">
+        <CardHelp
+          name="UX & UI Design"
+          description="Desenvolverei interfaces intuitivas e satisfatórias de se utilizar."
+          children={<PencilIcon />}
+        />
+        <CardHelp
+          name="API e Banco de Dados"
+          description="Desenvolvo APIs e bancos de dados eficientes e integrados."
+          children={<HardDisk />}
+        />
+        <CardHelp
+          name="Ideias Criativas"
+          description="Crio soluções inovadoras e impactantes."
+          children={<ScreenIcon />}
+        />
+        <CardHelp
+          name="Desenvolvimento Ágil"
+          description="Entrego soluções rápidas e de alta qualidade com agilidade."
+          children={<LampIcon />}
+        />
+      </div>
+    </div>
+  );
 }
