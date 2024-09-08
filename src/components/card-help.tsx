@@ -8,7 +8,7 @@ type CardHelpTypes = {
 
 export function CardHelp(data: CardHelpTypes) {
   return (
-    <div className="group/card flex h-[20rem] w-[15rem] flex-col justify-end gap-2 rounded-md border border-[#9D98A9] bg-secondary px-6 py-12 transition-transform hover:scale-105 hover:border-violet-500">
+    <div className="group/card hover:border-strokeFocus flex h-[20rem] w-[15rem] flex-col justify-end gap-2 rounded-md border border-[#9D98A9] bg-secondary px-6 py-12 transition-transform hover:scale-105">
       {data.children}
       <h1 className="font-maven text-lg font-medium text-gray-100">
         {data.name}

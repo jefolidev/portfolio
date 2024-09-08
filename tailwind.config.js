@@ -10,6 +10,7 @@ export default {
         quartiary: "#1C1922",
         cardPrimary: "#26252E",
         strokeDefault: "#747474",
+        strokeFocus: "#8B5CF6",
       },
       fontFamily: {
         maven: ["Maven Pro", "sans-serif"],

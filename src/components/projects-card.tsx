@@ -22,7 +22,7 @@ export function MyProjectsCard(data: MyProjectsCardTypes) {
           <img src={data.picBottom} alt="" className="rounded-xl" />
         </div>
       </div>
-      <div className="border-strokeDefault/30 flex h-[8rem] w-full items-center justify-between rounded-lg border-2 bg-[#1E1B24] px-20">
+      <div className="border-strokeDefault/30 hover:border-strokeFocus flex h-[8rem] w-full items-center justify-between rounded-lg border-2 bg-[#1E1B24] px-20">
         <div className="flex flex-col gap-1">
           <h1 className="font-geologica text-xl font-medium text-gray-50">
             {data.name}
@@ -31,7 +31,7 @@ export function MyProjectsCard(data: MyProjectsCardTypes) {
             {data.description}
           </span>
         </div>
-        <button>
+        <button className="p-2">
           <img src={arrowRight} alt="" className="w-2.5" />
         </button>
       </div>
