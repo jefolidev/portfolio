@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import arrowRight from "../assets/arrow-right.svg";
 type MyProjectsCardTypes = {
   name: string;
@@ -9,9 +10,11 @@ type MyProjectsCardTypes = {
 };
 
 export function MyProjectsCard(data: MyProjectsCardTypes) {
+  const navigate = useNavigate();
+
   return (
-    <div className="bg-cardPrimary flex h-[42.5rem] w-full flex-col items-center justify-around rounded-md p-4">
-      <div className="border-strokeDefault/30 h-30rem flex w-full items-center justify-center gap-5 rounded-lg border-2 bg-[#1E1B24] pt-8">
+    <div className="bg-cardPrimary flex flex-col items-center justify-around gap-4 rounded-md p-4 shadow-2xl">
+      <div className="border-strokeDefault/30 flex items-center justify-center gap-5 self-stretch rounded-lg border-2 bg-[#1E1B24] pt-8">
         <img
           src={data.mainPic}
           alt=""
@@ -22,19 +25,19 @@ export function MyProjectsCard(data: MyProjectsCardTypes) {
           <img src={data.picBottom} alt="" className="rounded-xl" />
         </div>
       </div>
-      <div className="border-strokeDefault/30 hover:border-strokeFocus flex h-[8rem] w-full items-center justify-between rounded-lg border-2 bg-[#1E1B24] px-20">
-        <div className="flex flex-col gap-1">
+      <button className="border-strokeDefault/30 hover:border-strokeFocus flex h-[8rem] w-full items-center justify-between rounded-lg border-2 bg-[#1E1B24] px-20 transition-colors">
+        <div className="flex flex-1 flex-col items-start gap-1">
           <h1 className="font-geologica text-xl font-medium text-gray-50">
             {data.name}
           </h1>
-          <span className="max-h-[910px] font-maven text-sm text-gray-400">
+          <span className="max-h-[58rem] text-left font-maven text-sm text-gray-400">
             {data.description}
           </span>
         </div>
         <button className="p-2">
           <img src={arrowRight} alt="" className="w-2.5" />
         </button>
-      </div>
+      </button>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import { NotFound } from "./pages/404";
 import { AppLayout } from "./pages/_layout/app";
+import { ProjectLayout } from "./pages/_layout/project";
 import { PortfolioRoot } from "./pages/app/main/_index";
 import { ProjectsRoot } from "./pages/app/projects/_index";
 
@@ -15,9 +16,13 @@ export const router = createBrowserRouter([
         element: <PortfolioRoot />,
       },
       {
-        path: "/projects",
+        path: "projects",
         element: <ProjectsRoot />,
         errorElement: <NotFound />,
+      },
+      {
+        path: "projects/:projectId",
+        element: <ProjectLayout />,
       },
     ],
   },

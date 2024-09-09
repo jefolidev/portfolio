@@ -12,10 +12,14 @@ import formMatMain from "./assets/form-matricula/form-main.png";
 import formMatPrimary from "./assets/form-matricula/form-others.png";
 import formMatSecondary from "./assets/form-matricula/form-unique.png";
 
+import tourismTamplate from "./assets/tourism/tourism-cape.png";
+
+import arrowRight from "../../../assets/arrow-right.svg";
+
 export function ProjectsBody() {
   return (
     <div className="flex h-full w-full flex-col bg-primary px-3 py-8">
-      <div className="flex h-[156.5rem] w-full flex-col gap-16 rounded-lg bg-secondary px-16 py-10">
+      <div className="flex h-[100%] w-full flex-col gap-16 rounded-lg bg-secondary px-16 py-10">
         <MyProjectsCard
           name="Net.ly"
           description="O net.ly é um site criado para conectar atletas de vôlei, oferecendo uma experiência completa para quem gosta de participar de rachas. A plataforma permite agendar partidas e acompanhar um calendário com os próximos jogos."
@@ -37,6 +41,32 @@ export function ProjectsBody() {
           picTop={gitPrimary}
           picBottom={gitSecondary}
         />
+        <div className="flex w-[75rem] flex-col gap-8">
+          <div className="flex items-center justify-start gap-4">
+            <div className="h-1 w-1 rounded-full bg-gray-300" />
+            <h1 className="font-maven font-bold text-gray-300">
+              Meus Projetos
+            </h1>
+          </div>
+          <div className="justify-content flex items-center gap-[5rem] self-stretch">
+            <div className="[h-22.3rem] flex w-[22.2rem] flex-col items-center gap-4 px-3 py-[0.62rem]">
+              <img src={tourismTamplate} alt="" className="self-stretch" />
+              <div className="flex flex-1 items-center justify-between self-stretch">
+                <div className="flex flex-col items-start">
+                  <h1 className="font-geologica text-xl font-bold text-gray-50">
+                    Página de Turismo
+                  </h1>
+                  <span className="font-maven text-sm text-gray-400">
+                    Landing Page
+                  </span>
+                </div>
+                <button className="flex h-8 w-8 items-center justify-center rounded-full bg-terciary">
+                  <img src={arrowRight} alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
