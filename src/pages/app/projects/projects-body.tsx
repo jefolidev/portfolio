@@ -14,9 +14,11 @@ import formMatSecondary from "./assets/form-matricula/form-unique.png";
 
 import tourismTamplate from "./assets/tourism/tourism-cape.png";
 
+import { useNavigate } from "react-router-dom";
 import arrowRight from "../../../assets/arrow-right.svg";
 
 export function ProjectsBody() {
+  const navigate = useNavigate();
   return (
     <div className="flex h-full w-full flex-col bg-primary px-3 py-8">
       <div className="flex h-[100%] w-full flex-col gap-16 rounded-lg bg-secondary px-16 py-10">
@@ -26,6 +28,7 @@ export function ProjectsBody() {
           mainPic={netlyMain}
           picTop={netlyPrimary}
           picBottom={netlySecondary}
+          onClick={() => navigate("/projects/netly")}
         />
         <MyProjectsCard
           name="Formulário Matrícula"
@@ -33,6 +36,7 @@ export function ProjectsBody() {
           mainPic={formMatMain}
           picTop={formMatPrimary}
           picBottom={formMatSecondary}
+          onClick={() => navigate("/projects/matform")}
         />
         <MyProjectsCard
           name="Git Searcher"
@@ -40,12 +44,13 @@ export function ProjectsBody() {
           mainPic={gitMain}
           picTop={gitPrimary}
           picBottom={gitSecondary}
+          onClick={() => navigate("/projects/gitsearch")}
         />
         <div className="flex w-[75rem] flex-col gap-8">
           <div className="flex items-center justify-start gap-4">
             <div className="h-1 w-1 rounded-full bg-gray-300" />
             <h1 className="font-maven font-bold text-gray-300">
-              Meus Projetos
+              Outros Projetos
             </h1>
           </div>
           <div className="justify-content flex items-center gap-[5rem] self-stretch">
@@ -60,7 +65,10 @@ export function ProjectsBody() {
                     Landing Page
                   </span>
                 </div>
-                <button className="flex h-8 w-8 items-center justify-center rounded-full bg-terciary">
+                <button
+                  className="flex h-8 w-8 items-center justify-center rounded-full bg-terciary hover:brightness-125"
+                  onClick={() => navigate("/projects/tourism")}
+                >
                   <img src={arrowRight} alt="" />
                 </button>
               </div>

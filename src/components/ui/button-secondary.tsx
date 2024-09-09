@@ -1,6 +1,6 @@
 export type ButtonType = {
   iconPath?: string;
-  text: string;
+  text?: string;
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
 };
 

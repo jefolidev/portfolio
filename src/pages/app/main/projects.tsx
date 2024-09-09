@@ -17,20 +17,42 @@ export function ProjectsMain() {
           meu aprendizado e no aprimoramento da minha carreira.
         </span>
       </div>
-      <div className="flex h-96 w-[98%] flex-col justify-center gap-4 rounded-xl bg-secondary">
-        <div className="mr-[6.5rem] self-end">
-          <ButtonPrimary
-            text="Ver todos"
-            onClick={() => navigate("/projects")}
-          />
-        </div>
-        <div className="grid grid-flow-col grid-rows-2 items-center justify-evenly gap-5">
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
+
+      <div className="flex h-96 w-[98%] flex-col justify-center rounded-lg bg-secondary px-36">
+        <div className="flex w-full flex-col space-y-6">
+          <div className="mr-[6.5rem]">
+            <ButtonPrimary
+              text="Ver todos"
+              onClick={() => navigate("/projects")}
+            />
+          </div>
+
+          <div className="grid grid-flow-col grid-rows-2 items-center justify-start gap-5">
+            <ProjectCard
+              name="Net.ly"
+              description="Landing Page, Rede Social"
+              onClick={() => navigate("/projects/netly")}
+              buttonColor="bg-yellow-500"
+            />
+            <ProjectCard
+              name="Git Searcher"
+              description="Aplicação Web"
+              onClick={() => navigate("/projects/gitsearch")}
+              buttonColor="bg-purple-300"
+            />
+            <ProjectCard
+              name="Form. de Matrícula"
+              description="Landing Page"
+              onClick={() => navigate("/projects/matform")}
+              buttonColor="bg-rose-500"
+            />
+            <ProjectCard
+              name="Página de Turismo"
+              description="Landing Page, Rede Social"
+              onClick={() => navigate("/projects/tourism")}
+              buttonColor="bg-blue-700"
+            />
+          </div>
         </div>
       </div>
     </div>

@@ -41,7 +41,13 @@ export function Introduction() {
         <PerfilLanguageCard iconPath={postgres} name="Postgres" />
       </div>
       <div className="flex gap-4">
-        <ButtonPrimary text="GitHub" iconPath={github} />
+        <a
+          href="http://github.com/jefolidev"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <ButtonPrimary text="GitHub" iconPath={github} />
+        </a>
       </div>
     </div>
   );
