@@ -9,6 +9,8 @@ import { MatriculaProjectPage } from "../app/projects/pages/matform";
 import { NetlyProjectPage } from "../app/projects/pages/netly";
 import { TurismoProjectPage } from "../app/projects/pages/tourism";
 
+import gitHubIcon from "../assets/github-icon.svg";
+
 export function ProjectLayout() {
   const { projectId } = useParams();
 
@@ -29,7 +31,9 @@ export function ProjectLayout() {
           <span className="font-maven text-lg text-gray-400">
             {project.description}
           </span>
-          <ButtonPrimary text="Repositório" />
+          <a href={project.repo} target="_blank" rel="noopener noreferrer">
+            <ButtonPrimary text="Repositório" iconPath={gitHubIcon} />
+          </a>
         </div>
         {projectId === "netly" ? <NetlyProjectPage /> : null}
         {projectId === "tourism" ? <TurismoProjectPage /> : null}
