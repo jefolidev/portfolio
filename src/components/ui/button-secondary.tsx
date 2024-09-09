@@ -1,7 +1,7 @@
 export type ButtonType = {
   iconPath?: string;
   text: string;
-  onClick: React.MouseEventHandler<HTMLButtonElement>;
+  onClick?: React.MouseEventHandler<HTMLButtonElement>;
 };
 
 export function ButtonSecondary(props: ButtonType) {

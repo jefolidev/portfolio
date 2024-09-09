@@ -18,6 +18,10 @@ export default {
         geologica: ["Geologica", "sans-serif"],
       },
       backgroundImage: {
+        netlyBackground1: "url('./src/assets/netly/project-netly-main.png')",
+        netlyBackground2: "url('./src/assets/netly/project-netly-others.png')",
+        netlyBackground3: "url('./src/assets/netly/project-netly-unique.png')",
+
         perfil: "url('./src/pages/assets/fotominhacircle.png')",
         dotted: "url('./src/assets/dotted-background.png')",
       },
