@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
+  darkMode: "selector",
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
@@ -11,6 +12,17 @@ export default {
         cardPrimary: "#26252E",
         strokeDefault: "#747474",
         strokeFocus: "#8B5CF6",
+
+        lightPrimary: "#FBFCF8",
+        lightSecondary: "#EFEEF1",
+        lightTerciary: "#C8C8C8",
+
+        lightFonts: "#1F1F1F",
+        lightSubtitles: "#535353",
+
+        lightButtons: "#111111",
+        lightStroke: "#4F4F4F",
+        lightCards: "#1F1F1F",
       },
       fontFamily: {
         maven: ["Maven Pro", "sans-serif"],

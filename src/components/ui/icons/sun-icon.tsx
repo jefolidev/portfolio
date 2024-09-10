@@ -21,7 +21,7 @@ export function SunIcon() {
       </svg>
       <AltBox
         className="-top-8 left-[7.5rem] w-24 text-nowrap text-[0.8rem] group-hover/theme:visible"
-        name="Tema escuro"
+        name="Tema claro"
       />
     </div>
   );

@@ -25,9 +25,11 @@ export function Introduction() {
         <p className="inline font-jet text-sm text-gray-200">
           Hello World! Meu nome é Jeferson e eu sou
         </p>
-        <h1 className="inline font-geologica text-5xl font-medium text-gray-50">
-          Desenvolvedor Full Stack
-        </h1>
+        <span>
+          <div className="inline whitespace-pre-wrap bg-gradient-to-br from-purple-200 via-purple-400 to-purple-800 bg-clip-text font-geologica text-5xl font-medium leading-none text-transparent">
+            Desenvolvedor Full Stack
+          </div>
+        </span>
         <span className="block text-center font-maven text-sm text-gray-200">
           Gosto muito do que eu faço, programar definitivamente é minha paixão.
           Transformo minhas dificuldades em motivação para aprender mais sobre
