@@ -15,16 +15,16 @@ export function ProjectCard({
 }: ProjectCardButton) {
   return (
     <button
-      className="flex h-20 w-72 items-center justify-between rounded-lg border-2 border-transparent bg-terciary px-4 shadow-lg transition-colors hover:border-2 hover:border-[#9d98a996] hover:brightness-110"
+      className="bg-lightButtons hover:border-lightStroke flex h-20 w-72 items-center justify-between rounded-lg border-2 border-transparent px-4 shadow-lg shadow-gray-700/40 transition-colors hover:border-2 hover:brightness-110 dark:bg-terciary dark:shadow-black/20 dark:hover:border-[#9d98a996] dark:hover:brightness-110"
       onClick={onClick}
     >
       <div className="flex gap-4">
         <div className={`h-10 w-10 rounded-full ${buttonColor}`} />
         <div className="flex flex-col items-start">
-          <h1 className="font-sm font-geologica font-medium text-gray-50">
+          <h1 className="font-sm font-geologica font-medium text-white dark:text-gray-50">
             {name}
           </h1>
-          <span className="font-geologica text-xs text-gray-300">
+          <span className="font-geologica text-xs text-gray-200 dark:text-gray-300">
             {description}
           </span>
         </div>

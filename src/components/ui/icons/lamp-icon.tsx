@@ -8,7 +8,7 @@ export function LampIcon() {
       viewBox="0 0 22 22"
     >
       <path
-        className="stroke-[#CECCD4] group-hover/card:stroke-purple-500"
+        className="stroke-lightFonts/60 transition-colors group-hover/card:stroke-purple-500 dark:stroke-[#CECCD4]"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth="1.4"

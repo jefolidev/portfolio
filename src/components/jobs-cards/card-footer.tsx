@@ -1,6 +1,6 @@
-import local from "../../assets/local.svg";
-import modality from "../../assets/modality.svg";
-import money from "../../assets/money.svg";
+import { LocalIcon } from "../ui/icons/local-icon";
+import { ModalityIcon } from "../ui/icons/modality-icon";
+import { MoneyIcon } from "../ui/icons/money-icon";
 import { LanguageSection } from "./components/language-section";
 
 import { ReactNode } from "react";
@@ -15,14 +15,14 @@ export type CardFooterTypes = {
 export function CardFooter(data: CardFooterTypes) {
   return (
     <div className="flex justify-between">
-      <div className="flex items-center gap-2 text-sm text-gray-200">
-        <img src={local} alt="" className="h-4 w-4" />
+      <div className="text-lightSubtitles flex items-center gap-2 text-sm dark:text-gray-300 transition-colors">
+        <LocalIcon />
         <span>{data.location}</span>
-        <div className="mx-1.5 h-2 w-0.5 rounded-full bg-gray-200" />
-        <img src={money} alt="" className="ml-1 h-4 w-4" />
+        <div className="bg-lightSubtitles mx-1.5 h-2 w-0.5 rounded-full dark:bg-gray-200 transition-colors" />
+        <MoneyIcon />
         <span> R${data.money}</span>
-        <div className="mx-1.5 h-2 w-0.5 rounded-full bg-gray-200" />
-        <img src={modality} alt="" className="ml-1 h-4 w-4" />
+        <div className="bg-lightSubtitles mx-1.5 h-2 w-0.5 rounded-full dark:bg-gray-200 transition-colors" />
+        <ModalityIcon />
         <span>{data.modality}</span>
       </div>
       <div>

@@ -10,12 +10,12 @@ import timeline from "../../assets/timeline.svg";
 
 export function Experiences() {
   return (
-    <div className="flex h-[900px] min-h-screen w-full flex-col items-center justify-center space-y-5 bg-primary">
+    <div className="bg-lightPrimary flex h-[900px] min-h-screen w-full flex-col items-center justify-center space-y-5 transition-colors dark:bg-primary">
       <div className="self-start py-12 pl-40">
-        <h1 className="py-4 font-geologica text-5xl font-bold text-white">
+        <h1 className="text-lightFonts py-4 font-geologica text-5xl font-bold dark:text-white">
           Minhas experiências
         </h1>
-        <span className="block h-[41px] max-w-[900px] font-maven text-sm text-gray-200">
+        <span className="text-lighSubtitles block h-[41px] max-w-[900px] font-maven text-sm transition-colors dark:text-gray-200">
           Veja como atuei em vagas passadas e cheque algumas curiosidades em que
           já coloquei a mão na massa! Desenvolvi, prestei manutenção e fiz
           deploy. Como poderei ajudar na sua empresa?
@@ -26,10 +26,16 @@ export function Experiences() {
           <img src={timeline} className="h-[620px]" />
         </div>
         <div className="flex flex-col gap-3">
-          <span className="font-maven text-gray-400">
+          <span className="text-lightSubtitles font-maven font-medium transition-colors dark:text-gray-400">
             Contratado como{" "}
-            <p className="inline text-white">Estagiário Back End</p> em
-            <p className="inline text-white"> 2024</p>
+            <p className="text-lightFonts inline font-semibold transition-colors dark:text-white">
+              Estagiário Back End
+            </p>{" "}
+            em
+            <p className="text-lightFonts inline font-semibold transition-colors dark:text-white">
+              {" "}
+              2024
+            </p>
           </span>
           <JobCard.Root>
             <JobCard.Header
@@ -60,10 +66,16 @@ export function Experiences() {
               }
             />
           </JobCard.Root>
-          <span className="font-maven text-gray-400">
-            Contratado como <p className="inline text-white">Suporte de TI</p>{" "}
+          <span className="text-lightSubtitles font-maven font-medium dark:text-gray-400">
+            Contratado como{" "}
+            <p className="text-lightFonts inline font-semibold dark:text-white">
+              Suporte de TI
+            </p>{" "}
             em
-            <p className="inline text-white"> 2023</p>
+            <p className="text-lightFonts inline font-semibold dark:text-white">
+              {" "}
+              2023
+            </p>
           </span>
           <JobCard.Root>
             <JobCard.Header

@@ -6,7 +6,7 @@ export type CardContentTypes = {
 export function CardContent(data: CardContentTypes) {
   return (
     <div className="flex flex-col pl-8 pr-36">
-      <ol className="list-disc space-y-3 text-sm text-white">
+      <ol className="text-lightFonts list-disc space-y-3 text-sm dark:text-white transition-colors">
         <li>
           <span>{data.firstMessage}</span>
         </li>

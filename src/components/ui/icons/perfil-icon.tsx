@@ -9,10 +9,10 @@ export function PerfilIcon() {
         height="18"
         fill="none"
         viewBox="0 0 18 18"
-        className="transition duration-100 group-hover/perfil:scale-125"
+        className="transition-all duration-100 group-hover/perfil:scale-125"
       >
         <path
-          stroke="#CECCD4"
+          className="stroke-lightFonts dark:stroke-gray-50"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="1.5"

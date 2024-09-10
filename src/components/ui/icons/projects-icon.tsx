@@ -9,10 +9,10 @@ export function ProjectsIcon() {
         height="16"
         fill="none"
         viewBox="0 0 20 16"
-        className="transition duration-100 group-hover/projects:scale-125"
+        className="transition-all duration-100 group-hover/projects:scale-125"
       >
         <path
-          stroke="#DEDDE2"
+          className="stroke-lightFonts dark:stroke-gray-50"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="1.5"

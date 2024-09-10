@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: "selector",
+  darkMode: "class",
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
@@ -35,6 +35,7 @@ module.exports = {
         netlyBackground3: "url('./src/assets/netly/project-netly-unique.png')",
 
         perfil: "url('./src/pages/assets/fotominhacircle.png')",
+        dottedLight: "url('./src/assets/dotted-background-white.png')",
         dotted: "url('./src/assets/dotted-background.png')",
       },
     },

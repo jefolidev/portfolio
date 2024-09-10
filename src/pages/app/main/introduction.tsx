@@ -9,20 +9,22 @@ import typescript from "../../assets/typescript.svg";
 
 export function Introduction() {
   return (
-    <div className="flex h-screen w-full flex-col items-center justify-center gap-8 bg-primary">
+    <div className="bg-lightPrimary flex h-screen w-full flex-col items-center justify-center gap-8 transition-colors dark:bg-primary">
       <div className="relative">
         <img
           src={perfilPic}
           alt=""
-          className="h-[149px] w-[149px] rounded-full border-[15px] border-[#1c19227c]"
+          className="border-lightSecondary h-[149px] w-[149px] rounded-full border-[15px] transition-colors dark:border-[#1c19227c]"
         />
-        <div className="absolute inset-x-5 -bottom-4 flex h-5 w-28 items-center justify-center gap-2 rounded-full bg-[#1c1922b9]">
+        <div className="bg-lightSecondary absolute inset-x-5 -bottom-4 flex h-5 w-28 items-center justify-center gap-2 rounded-full transition-colors dark:bg-[#1c1922b9]">
           <div className="h-1 w-1 rounded-full bg-emerald-500"></div>
-          <span className="font-jet text-xs text-white">Open to work</span>
+          <span className="text-lightFonts font-jet text-xs transition-colors dark:text-white">
+            Open to work
+          </span>
         </div>
       </div>
       <div className="gap flex max-w-[728px] flex-col items-center gap-4">
-        <p className="inline font-jet text-sm text-gray-200">
+        <p className="text-lightFonts inline font-jet text-sm transition-colors dark:text-gray-200">
           Hello World! Meu nome é Jeferson e eu sou
         </p>
         <span>
@@ -30,7 +32,7 @@ export function Introduction() {
             Desenvolvedor Full Stack
           </div>
         </span>
-        <span className="block text-center font-maven text-sm text-gray-200">
+        <span className=" transition-colors text-lightSubtitles block text-center font-maven text-sm dark:text-gray-200">
           Gosto muito do que eu faço, programar definitivamente é minha paixão.
           Transformo minhas dificuldades em motivação para aprender mais sobre
           esse vasto campo da tecnologia. Venha me conhecer um pouco mais!

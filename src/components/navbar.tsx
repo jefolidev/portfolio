@@ -19,7 +19,7 @@ export function NavBar() {
       <button onClick={() => navigate("/projects")}>
         <ProjectsIcon />
       </button>
-      <div className="h-1 w-0.5 rounded-full bg-gray-100" />
+      <div className="bg-lightFonts h-1 w-0.5 rounded-full dark:bg-gray-100" />
       <button onClick={themeChanger}>{darkIcon}</button>
     </nav>
   );

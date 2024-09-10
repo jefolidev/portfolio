@@ -9,10 +9,10 @@ export function SunIcon() {
         height="20"
         fill="none"
         viewBox="0 0 20 20"
-        className="transition duration-100 group-hover/theme:scale-110"
+        className="transition-all duration-100 group-hover/theme:scale-110"
       >
         <path
-          stroke="#fff"
+          className="stroke-lightFonts dark:stroke-gray-50"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="1.5"

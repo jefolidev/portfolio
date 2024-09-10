@@ -6,19 +6,19 @@ export function ProjectsMain() {
   const navigate = useNavigate();
   navigate("/projects");
   return (
-    <div className="flex h-screen w-full flex-col items-center justify-center bg-primary">
+    <div className="bg-lightPrimary flex h-screen w-full flex-col items-center justify-center transition-colors dark:bg-primary">
       <div className="self-start py-12 pl-40">
-        <h1 className="py-4 font-geologica text-5xl font-bold text-white">
+        <h1 className="text-lightFonts py-4 font-geologica text-5xl font-bold tracking-tight transition-colors dark:text-white">
           Meus Projetos
         </h1>
-        <span className="block h-[41px] max-w-[900px] font-maven text-sm text-gray-200">
+        <span className="text-lightSubtitles block h-[41px] max-w-[900px] font-maven text-sm transition-colors dark:text-gray-200">
           Navegue pelo meu portfólio, onde encontrará interfaces bem trabalhadas
           e aplicações bem desenvolvidas. Esses projetos influenciaram muito no
           meu aprendizado e no aprimoramento da minha carreira.
         </span>
       </div>
 
-      <div className="flex h-96 w-[98%] flex-col justify-center rounded-lg bg-secondary px-36">
+      <div className="bg-lightSecondary flex h-96 w-[98%] flex-col justify-center rounded-lg px-36 transition-colors dark:bg-secondary">
         <div className="flex w-full flex-col space-y-6">
           <div className="mr-[6.5rem]">
             <ButtonPrimary
