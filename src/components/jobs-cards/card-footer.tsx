@@ -14,16 +14,16 @@ export type CardFooterTypes = {
 
 export function CardFooter(data: CardFooterTypes) {
   return (
-    <div className="flex justify-between">
-      <div className="text-lightSubtitles flex items-center gap-2 text-sm dark:text-gray-300 transition-colors">
+    <div className="xs:flex-col xs:gap-4 flex sm:w-full sm:flex-row sm:justify-between">
+      <div className="text-lightSubtitles flex items-center gap-2 text-sm transition-colors sm:justify-between dark:text-gray-300">
         <LocalIcon />
-        <span>{data.location}</span>
-        <div className="bg-lightSubtitles mx-1.5 h-2 w-0.5 rounded-full dark:bg-gray-200 transition-colors" />
+        <span className="xs:text-xs sm:text-base">{data.location}</span>
+        <div className="bg-lightSubtitles mx-1.5 h-2 w-0.5 rounded-full transition-colors dark:bg-gray-200" />
         <MoneyIcon />
-        <span> R${data.money}</span>
-        <div className="bg-lightSubtitles mx-1.5 h-2 w-0.5 rounded-full dark:bg-gray-200 transition-colors" />
+        <span className="xs:text-xs sm:text-base"> R${data.money}</span>
+        <div className="bg-lightSubtitles mx-1.5 h-2 w-0.5 rounded-full transition-colors dark:bg-gray-200" />
         <ModalityIcon />
-        <span>{data.modality}</span>
+        <span className="xs:text-xs sm:text-base">{data.modality}</span>
       </div>
       <div>
         <LanguageSection className="gap-2 px-3">

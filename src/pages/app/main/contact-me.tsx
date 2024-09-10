@@ -6,7 +6,7 @@ import { LinkedinIcon } from "../../../components/ui/icons/linkedin-icon";
 export function ContactMe() {
   return (
     <div className="bg-lightPrimary h-[456px] w-full select-none p-3 transition-colors dark:bg-primary">
-      <div className="bg-lightSecondary flex h-full w-full items-center justify-between rounded-lg px-48 transition-colors dark:bg-secondary">
+      <div className="bg-lightSecondary xs:px-8 grid h-full w-full items-center justify-between rounded-lg transition-colors sm:grid-cols-2 sm:px-48 dark:bg-secondary">
         <div className="space-y-2.5">
           <h1 className="font-geo text-lightFonts max-w-[336px] text-4xl font-bold transition-colors dark:text-white">
             Gostou do meu trabalho?
@@ -15,13 +15,14 @@ export function ContactMe() {
             Entre em contato comigo nas minhas redes sociais!
           </span>
         </div>
-        <div className="grid grid-flow-dense grid-cols-2 gap-2">
+        <div className="grid-flow grid grid-cols-2 gap-2">
           <a
             href="https://www.linkedin.com/in/jeferson-franco-1349062b0/"
             target="_blank"
             rel="noopener noreferrer"
+            className=""
           >
-            <button className="bg-lightButtons flex h-[55px] w-[191px] items-center justify-between gap-2 rounded-md border border-transparent px-6 transition-all hover:border-strokeDefault hover:brightness-110 dark:bg-terciary dark:hover:border-[#9D98A9]">
+            <button className="bg-lightButtons flex h-[55px] w-full items-center justify-between gap-2 rounded-md border border-transparent px-6 transition-all hover:border-strokeDefault hover:brightness-110 dark:bg-terciary dark:hover:border-[#9D98A9]">
               <div className="flex items-center justify-start gap-3">
                 <LinkedinIcon />
                 <p className="font-maven text-white">Linkedin</p>
@@ -34,7 +35,7 @@ export function ContactMe() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="bg-lightButtons flex h-[55px] w-[191px] items-center justify-between gap-2 rounded-md border border-transparent px-6 transition-all hover:border-strokeDefault hover:brightness-110 dark:bg-terciary dark:hover:border-[#9D98A9]">
+            <button className="bg-lightButtons flex h-[55px] w-full items-center justify-between gap-2 rounded-md border border-transparent px-6 transition-all hover:border-strokeDefault hover:brightness-110 dark:bg-terciary dark:hover:border-[#9D98A9]">
               <div className="flex items-center justify-start gap-3">
                 <GitHubIcon />
                 <p className="font-maven text-white">GitHub</p>
@@ -57,7 +58,7 @@ export function ContactMe() {
             </button>
           </a>
           <div className="bg-lightButtons col-span-2 flex h-[55px] items-center justify-center rounded-md dark:bg-terciary">
-            <span className="w-max text-xs text-gray-50 dark:text-gray-300">
+            <span className="xs:text-[.6rem] w-max text-gray-50 sm:text-xs dark:text-gray-300">
               © 2024 Jeferson Franco - Todos direitos reservados
             </span>
           </div>

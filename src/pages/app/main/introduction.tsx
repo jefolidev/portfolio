@@ -28,17 +28,21 @@ export function Introduction() {
           Hello World! Meu nome é Jeferson e eu sou
         </p>
         <span>
-          <div className="inline whitespace-pre-wrap bg-gradient-to-br from-purple-200 via-purple-400 to-purple-800 bg-clip-text font-geologica text-5xl font-medium leading-none text-transparent">
+          <div className="xs:text-center xs:float-end inline whitespace-pre-wrap bg-gradient-to-br from-purple-200 via-purple-400 to-purple-800 bg-clip-text font-geologica text-5xl font-medium leading-none text-transparent">
             Desenvolvedor Full Stack
           </div>
         </span>
-        <span className=" transition-colors text-lightSubtitles block text-center font-maven text-sm dark:text-gray-200">
+        <span className="text-lightSubtitles xs:block block text-center font-maven text-sm transition-colors sm:hidden dark:text-gray-200">
+          Transformo minhas dificuldades em motivação para aprender mais sobre
+          esse vasto campo da tecnologia. Venha me conhecer um pouco mais!
+        </span>
+        <span className="text-lightSubtitles xs:hidden block text-center font-maven text-sm transition-colors sm:block dark:text-gray-200">
           Gosto muito do que eu faço, programar definitivamente é minha paixão.
           Transformo minhas dificuldades em motivação para aprender mais sobre
           esse vasto campo da tecnologia. Venha me conhecer um pouco mais!
         </span>
       </div>
-      <div className="flex items-center gap-4">
+      <div className="grid grid-cols-2 items-center gap-4 lg:grid-cols-4">
         <PerfilLanguageCard iconPath={typescript} name="TypeScript" />
         <PerfilLanguageCard iconPath={react} name="React" />
         <PerfilLanguageCard iconPath={node} name="Node.js" />

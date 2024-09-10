@@ -10,8 +10,8 @@ import timeline from "../../assets/timeline.svg";
 
 export function Experiences() {
   return (
-    <div className="bg-lightPrimary flex h-[900px] min-h-screen w-full flex-col items-center justify-center space-y-5 transition-colors dark:bg-primary">
-      <div className="self-start py-12 pl-40">
+    <div className="bg-lightPrimary xs:h-full xs:px-2 flex min-h-screen flex-col items-center justify-center space-y-5 transition-colors sm:h-[900px] sm:w-full dark:bg-primary">
+      <div className="xs:py-16 xs:px-5 self-start sm:px-40 sm:py-12">
         <h1 className="text-lightFonts py-4 font-geologica text-5xl font-bold dark:text-white">
           Minhas experiências
         </h1>
@@ -21,12 +21,11 @@ export function Experiences() {
           deploy. Como poderei ajudar na sua empresa?
         </span>
       </div>
-      <div className="flex w-full items-center justify-start gap-5 pl-40">
-        <div className="">
-          <img src={timeline} className="h-[620px]" />
-        </div>
-        <div className="flex flex-col gap-3">
-          <span className="text-lightSubtitles font-maven font-medium transition-colors dark:text-gray-400">
+      <div className="xs:pl-2 xs:items-start xs:gap-3 flex h-full w-full sm:items-center sm:justify-start sm:gap-5 sm:pl-40">
+        <img src={timeline} className="xs:hidden h-[620px] sm:block" />
+
+        <div className="xs:gap-8 flex flex-col sm:gap-3">
+          <span className="xs:hidden text-lightSubtitles xs:text-sm font-maven font-medium transition-colors sm:block dark:text-gray-400">
             Contratado como{" "}
             <p className="text-lightFonts inline font-semibold transition-colors dark:text-white">
               Estagiário Back End
@@ -66,7 +65,7 @@ export function Experiences() {
               }
             />
           </JobCard.Root>
-          <span className="text-lightSubtitles font-maven font-medium dark:text-gray-400">
+          <span className="xs:hidden text-lightSubtitles xs:text-sm font-maven font-medium sm:block dark:text-gray-400">
             Contratado como{" "}
             <p className="text-lightFonts inline font-semibold dark:text-white">
               Suporte de TI

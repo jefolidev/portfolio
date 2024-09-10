@@ -38,6 +38,9 @@ module.exports = {
         dottedLight: "url('./src/assets/dotted-background-white.png')",
         dotted: "url('./src/assets/dotted-background.png')",
       },
+      screens: {
+        xs: "370px",
+      },
     },
   },
   plugins: [],
