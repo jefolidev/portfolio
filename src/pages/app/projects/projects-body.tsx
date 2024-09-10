@@ -21,7 +21,7 @@ export function ProjectsBody() {
   const navigate = useNavigate();
   return (
     <div className="bg-lightPrimary flex h-full w-full flex-col px-3 py-8 dark:bg-primary">
-      <div className="bg-lightSecondary flex h-[100%] w-full flex-col gap-16 rounded-lg px-16 py-10 dark:bg-secondary">
+      <div className="bg-lightSecondary xs:px-3 xs:py-5 flex h-[100%] flex-col gap-16 rounded-lg sm:px-16 sm:py-10 dark:bg-secondary">
         <MyProjectsCard
           name="Net.ly"
           description="O net.ly é um site criado para conectar atletas de vôlei, oferecendo uma experiência completa para quem gosta de participar de rachas. A plataforma permite agendar partidas e acompanhar um calendário com os próximos jogos."
@@ -46,14 +46,14 @@ export function ProjectsBody() {
           picBottom={gitSecondary}
           onClick={() => navigate("/projects/gitsearch")}
         />
-        <div className="flex w-[75rem] flex-col gap-8">
+        <div className="flex w-full flex-col gap-8">
           <div className="flex items-center justify-start gap-4">
-            <div className="h-1 w-1 rounded-full bg-gray-300" />
-            <h1 className="font-maven font-bold text-gray-300">
+            <div className="bg-lightFonts h-1 w-1 rounded-full dark:bg-gray-300" />
+            <h1 className="text-lightFonts font-maven font-bold dark:text-gray-300">
               Outros Projetos
             </h1>
           </div>
-          <div className="justify-content flex items-center gap-[5rem] self-stretch">
+          <div className="xs:flex-col flex w-full items-center justify-start gap-[5rem] sm:flex-row">
             <div className="[h-22.3rem] flex w-[22.2rem] flex-col items-center gap-4 px-3 py-[0.62rem]">
               <img src={tourismTamplate} alt="" className="self-stretch" />
               <div className="flex flex-1 items-center justify-between self-stretch">
