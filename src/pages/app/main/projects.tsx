@@ -6,11 +6,12 @@ export function ProjectsMain() {
   const navigate = useNavigate();
   navigate("/projects");
   return (
-    <div className="bg-lightPrimary flex h-screen w-full flex-col items-center justify-center px-2 transition-colors dark:bg-primary">
+    <div className="via-lightPrimary from-lightPrimary flex h-screen w-full flex-col items-center justify-center bg-gradient-to-t to-slate-100 px-2 transition-colors dark:bg-primary dark:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] dark:from-secondary dark:via-primary dark:to-primary">
       <div className="xs:px-2 xs:py-20 self-start sm:px-40 sm:py-16">
         <h1 className="text-lightFonts py-4 font-geologica text-5xl font-bold tracking-tight transition-colors dark:text-white">
           Meus Projetos
         </h1>
+
         <span className="text-lightSubtitles block h-[41px] w-full text-start font-maven text-sm transition-colors lg:text-base dark:text-gray-200">
           Navegue pelo meu portfólio, onde encontrará interfaces bem trabalhadas
           e aplicações bem desenvolvidas. Esses projetos influenciaram muito no

@@ -9,14 +9,14 @@ import typescript from "../../assets/typescript.svg";
 
 export function Introduction() {
   return (
-    <div className="bg-lightPrimary flex h-screen w-full flex-col items-center justify-center gap-8 transition-colors dark:bg-primary">
+    <div className="via-lightPrimary to-lightSecondary flex h-screen w-full flex-col items-center justify-center gap-8 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-violet-900 transition-colors dark:bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] dark:via-secondary dark:to-primary">
       <div className="relative">
         <img
           src={perfilPic}
           alt=""
-          className="border-lightSecondary h-[149px] w-[149px] rounded-full border-[15px] transition-colors dark:border-[#1c19227c]"
+          className="h-[149px] w-[149px] rounded-full border-[15px] border-white border-opacity-20 transition-colors dark:border-[#1c192246]"
         />
-        <div className="bg-lightSecondary absolute inset-x-5 -bottom-4 flex h-5 w-28 items-center justify-center gap-2 rounded-full transition-colors dark:bg-[#1c1922b9]">
+        <div className="bg-lightSecondary/40 absolute inset-x-5 -bottom-4 flex h-5 w-28 items-center justify-center gap-2 rounded-full backdrop-blur-xl transition-colors dark:bg-[#1c19225e]">
           <div className="h-1 w-1 rounded-full bg-emerald-500"></div>
           <span className="text-lightFonts font-jet text-xs transition-colors dark:text-white">
             Open to work
@@ -28,7 +28,7 @@ export function Introduction() {
           Hello World! Meu nome é Jeferson e eu sou
         </p>
         <span>
-          <div className="xs:text-center xs:float-end inline whitespace-pre-wrap bg-gradient-to-br from-purple-200 via-purple-400 to-purple-800 bg-clip-text font-geologica text-5xl font-medium leading-none text-transparent">
+          <div className="xs:text-center xs:float-end text-lightFonts inline font-geologica text-5xl font-medium dark:bg-gradient-to-br dark:from-purple-200 dark:via-purple-400 dark:to-purple-800 dark:bg-clip-text dark:text-transparent">
             Desenvolvedor Full Stack
           </div>
         </span>
