@@ -6,7 +6,7 @@ export function MatriculaProjectPage() {
   return (
     <div className="flex flex-col gap-12 py-16">
       <img src={matform1} />
-      <span className="font-maven text-gray-200">
+      <span className="text-lightSubtitles font-maven font-medium transition-colors dark:text-gray-200">
         Em mais um desafio prático da Rocketseat, criei um formulário de
         matrícula para esportes voltado para crianças, utilizando exclusivamente
         HTML e CSS. O projeto foi focado no desenvolvimento da interface do
@@ -18,7 +18,7 @@ export function MatriculaProjectPage() {
         construir formulários funcionais e bem organizados.
       </span>
       <img src={matform2} />
-      <span className="font-maven text-gray-200">
+      <span className="text-lightSubtitles font-maven font-medium transition-colors dark:text-gray-200">
         O desafio de criar um formulário envolveu pensar na usabilidade. Com a
         simplicidade de HTML e CSS, consegui estruturar o layout de maneira
         intuitiva, garantindo que todas as informações necessárias fossem
@@ -38,7 +38,7 @@ export function MatriculaProjectPage() {
         inscrever seus filhos em atividades esportivas.
       </span>
       <img src={matform3} />
-      <span className="font-maven text-gray-200">
+      <span className="text-lightSubtitles font-maven font-medium transition-colors dark:text-gray-200">
         Finalizar esse formulário de inscrição esportiva foi mais uma etapa
         importante no meu aprendizado de front-end. A simplicidade do projeto
         com HTML e CSS mostrou como é possível criar interfaces eficientes sem

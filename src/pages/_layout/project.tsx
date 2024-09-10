@@ -23,12 +23,12 @@ export function ProjectLayout() {
   return (
     <>
       <NavBar />
-      <div className="h-full w-full bg-primary px-16 py-2">
+      <div className="bg-lightPrimary h-full w-full px-16 py-2 transition-colors dark:bg-primary ">
         <div className="flex flex-col gap-5 pt-20">
-          <h1 className="font-geologica text-5xl font-bold text-white">
+          <h1 className="text-lightFonts font-geologica text-5xl font-bold transition-colors dark:text-white">
             {project.name}
           </h1>
-          <span className="font-maven text-lg text-gray-400">
+          <span className="text-lightSubtitles font-maven text-lg dark:text-gray-400">
             {project.description}
           </span>
           <a href={project.repo} target="_blank" rel="noopener noreferrer">

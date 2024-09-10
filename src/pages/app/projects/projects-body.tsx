@@ -20,8 +20,8 @@ import arrowRight from "../../../assets/arrow-right.svg";
 export function ProjectsBody() {
   const navigate = useNavigate();
   return (
-    <div className="flex h-full w-full flex-col bg-primary px-3 py-8">
-      <div className="flex h-[100%] w-full flex-col gap-16 rounded-lg bg-secondary px-16 py-10">
+    <div className="bg-lightPrimary flex h-full w-full flex-col px-3 py-8 dark:bg-primary">
+      <div className="bg-lightSecondary flex h-[100%] w-full flex-col gap-16 rounded-lg px-16 py-10 dark:bg-secondary">
         <MyProjectsCard
           name="Net.ly"
           description="O net.ly é um site criado para conectar atletas de vôlei, oferecendo uma experiência completa para quem gosta de participar de rachas. A plataforma permite agendar partidas e acompanhar um calendário com os próximos jogos."
@@ -58,15 +58,15 @@ export function ProjectsBody() {
               <img src={tourismTamplate} alt="" className="self-stretch" />
               <div className="flex flex-1 items-center justify-between self-stretch">
                 <div className="flex flex-col items-start">
-                  <h1 className="font-geologica text-xl font-bold text-gray-50">
+                  <h1 className="text-lightFonts font-geologica text-xl font-bold transition-colors dark:text-gray-50">
                     Página de Turismo
                   </h1>
-                  <span className="font-maven text-sm text-gray-400">
+                  <span className="text-lightSubtitles font-maven text-sm transition-colors dark:text-gray-400">
                     Landing Page
                   </span>
                 </div>
                 <button
-                  className="flex h-8 w-8 items-center justify-center rounded-full bg-terciary hover:brightness-125"
+                  className="bg-lightButtons flex h-8 w-8 items-center justify-center rounded-full hover:brightness-125 dark:bg-terciary"
                   onClick={() => navigate("/projects/tourism")}
                 >
                   <img src={arrowRight} alt="" />

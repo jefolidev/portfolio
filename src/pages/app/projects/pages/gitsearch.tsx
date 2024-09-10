@@ -6,7 +6,7 @@ export function GitHubProjectPage() {
   return (
     <div className="flex flex-col gap-12 py-16">
       <img src={github1} />
-      <span className="font-maven text-gray-200">
+      <span className="text-lightSubtitles font-maven font-medium transition-colors dark:text-gray-200">
         No início da minha jornada como desenvolvedor, criei uma aplicação web
         para buscar repositórios utilizando a API do GitHub e a biblioteca
         Axios. Este projeto foi um marco significativo na minha aprendizagem,
@@ -18,7 +18,7 @@ export function GitHubProjectPage() {
         tempo real.
       </span>
       <img src={github2} />
-      <span className="font-maven text-gray-200">
+      <span className="text-lightSubtitles font-maven font-medium transition-colors dark:text-gray-200">
         Durante o desenvolvimento, um dos grandes aprendizados foi lidar com a
         integração de uma API externa. Trabalhar com a API do GitHub exigiu
         atenção ao formato dos dados retornados e como exibi-los de maneira
@@ -30,7 +30,7 @@ export function GitHubProjectPage() {
         fundamental.
       </span>
       <img src={github3} />
-      <span className="font-maven text-gray-200">
+      <span className="text-lightSubtitles font-maven font-medium transition-colors dark:text-gray-200">
         Ao finalizar a aplicação, fiquei orgulhoso de ver os resultados: uma
         interface simples e funcional que permite aos usuários buscar
         repositórios no GitHub com base em palavras-chave. O processo de receber

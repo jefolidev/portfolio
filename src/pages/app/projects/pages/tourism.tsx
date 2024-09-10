@@ -6,7 +6,7 @@ export function TurismoProjectPage() {
   return (
     <div className="flex flex-col gap-12 py-16">
       <img src={tourism1} />
-      <span className="font-maven text-gray-200">
+      <span className="text-lightSubtitles font-maven font-medium transition-colors dark:text-gray-200">
         No meu recente desafio prático da Rocketseat, desenvolvi um site de
         turismo usando apenas HTML e CSS. O projeto, intitulado "Sua Próxima
         Viajem", apresenta uma interface clean e intuitiva para os usuários que
@@ -15,7 +15,7 @@ export function TurismoProjectPage() {
         destacando-se pela simplicidade e funcionalidade.
       </span>
       <img src={tourism2} />
-      <span className="font-maven text-gray-200">
+      <span className="text-lightSubtitles font-maven font-medium transition-colors dark:text-gray-200">
         O desafio da Rocketseat foi uma ótima oportunidade para criar um projeto
         de turismo totalmente baseado em HTML e CSS. O site "Sua Próxima Viajem"
         foi projetado para oferecer uma experiência de usuário fluida e
@@ -25,7 +25,7 @@ export function TurismoProjectPage() {
         facilmente informações sobre atrações, acomodações e dicas de viagem.
       </span>
       <img src={tourism3} />
-      <span className="font-maven text-gray-200">
+      <span className="text-lightSubtitles font-maven font-medium transition-colors dark:text-gray-200">
         Este projeto foi uma excelente oportunidade para aplicar conceitos de
         design visual e usabilidade. O site foi projetado para destacar destinos
         turísticos de forma atraente, utilizando uma paleta de cores inspirada

@@ -9,7 +9,7 @@ export function NavBar() {
   const { themeChanger, darkIcon } = useTheme();
 
   return (
-    <nav className="fixed bottom-5 left-1/2 z-50 flex h-10 w-48 -translate-x-1/2 transform items-center justify-evenly gap-1 rounded-full shadow-lg shadow-black/20 backdrop-blur-md">
+    <nav className="fixed bottom-5 left-1/2 z-50 flex h-10 w-48 -translate-x-1/2 transform select-none items-center justify-evenly gap-1 rounded-full shadow-lg shadow-black/20 backdrop-blur-md">
       <button onClick={() => navigate("/")}>
         <HomeIcon />
       </button>
