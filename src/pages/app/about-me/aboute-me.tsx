@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { NavBar } from "../../../components/navbar";
 import illustrationLight from "./assets/Man developing website on desk-1.svg";
 import illustrationDark from "./assets/Man developing website on desk.svg";
@@ -5,6 +6,7 @@ import illustrationDark from "./assets/Man developing website on desk.svg";
 export function AboutMe() {
   return (
     <div>
+      <Helmet title="Sobre mim" />
       <NavBar />
       <div className="bg-lightPrimary h-full w-full px-16 py-16 transition-colors dark:bg-primary">
         <div className="mb-12 flex items-center gap-4">

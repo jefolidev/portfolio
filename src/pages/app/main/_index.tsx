@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { NavBar } from "../../../components/navbar";
 import { Experiences } from "./experience";
 import HowCanIHelp from "./help";
@@ -7,6 +8,7 @@ import { ProjectsMain } from "./projects";
 export function PortfolioRoot() {
   return (
     <>
+      <Helmet title="Início" />
       <NavBar />
       <Introduction />
       <ProjectsMain />
