@@ -45,9 +45,9 @@ export function MyProjectsCard(data: MyProjectsCardTypes) {
               : data.description}
           </span>
         </div>
-        <button className="xs:hidden p-2 sm:block">
+        <div className="xs:hidden p-2 sm:block">
           <img src={arrowRight} alt="" className="w-2.5" />
-        </button>
+        </div>
       </button>
     </div>
   );

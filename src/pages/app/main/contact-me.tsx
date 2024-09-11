@@ -6,12 +6,12 @@ import { LinkedinIcon } from "../../../components/ui/icons/linkedin-icon";
 export function ContactMe() {
   return (
     <div className="bg-lightPrimary h-[456px] w-full select-none p-3 transition-colors dark:bg-primary">
-      <div className="bg-lightSecondary xs:px-8 grid h-full w-full items-center justify-between rounded-lg transition-colors sm:grid-cols-2 sm:px-48 dark:bg-secondary">
-        <div className="space-y-2.5">
-          <h1 className="font-geo text-lightFonts max-w-[336px] text-4xl font-bold transition-colors dark:text-white">
+      <div className="bg-lightSecondary xs:px-8 xs:grid-cols-1 xs:justify-center grid h-full w-full items-center rounded-lg transition-colors sm:grid-cols-2 sm:justify-between sm:px-48 dark:bg-secondary">
+        <div className="xs:-mb-28 space-y-2.5 sm:mb-0">
+          <h1 className="font-geo text-lightFonts text-4xl font-bold transition-colors sm:w-[336px] dark:text-white">
             Gostou do meu trabalho?
           </h1>
-          <span className="text-lightSubtitles block max-w-[336px] font-maven transition-colors dark:text-gray-300">
+          <span className="text-lightSubtitles block font-maven transition-colors sm:w-[336px] dark:text-gray-300">
             Entre em contato comigo nas minhas redes sociais!
           </span>
         </div>
