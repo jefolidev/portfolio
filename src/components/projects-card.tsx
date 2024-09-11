@@ -12,11 +12,11 @@ type MyProjectsCardTypes = {
 export function MyProjectsCard(data: MyProjectsCardTypes) {
   return (
     <div className="bg-lightPrimary flex flex-col items-center justify-around gap-4 rounded-md p-4 shadow-2xl transition-colors dark:bg-cardPrimary">
-      <div className="bg-lightTerciary/5 flex flex-1 gap-5 rounded-lg border-2 border-strokeDefault/30 transition-colors lg:items-center lg:justify-end lg:pt-8 dark:bg-[#1E1B24]">
+      <div className="bg-lightTerciary/5 flex flex-1 gap-5 rounded-lg border-2 border-strokeDefault/30 px-4 transition-colors lg:items-center lg:justify-end lg:pt-8 dark:bg-[#1E1B24]">
         <img
           src={data.mainPic}
           alt=""
-          className="xs:rounded-lg lg:rounded-tl-xl lg:rounded-tr-xl"
+          className="xs:rounded-lg lg:rounded-tl-xl lg:rounded-tr-xl lg:rounded-b-none"
         />
         <div className="flex flex-col gap-2">
           <img
@@ -27,7 +27,7 @@ export function MyProjectsCard(data: MyProjectsCardTypes) {
           <img
             src={data.picBottom}
             alt=""
-            className="xs:hidden rounded-xl lg:block"
+            className="xs:hidden  lg:block"
           />
         </div>
       </div>
