@@ -53,8 +53,8 @@ export function ProjectsBody() {
               Outros Projetos
             </h1>
           </div>
-          <div className="xs:flex-col flex w-full items-center justify-start gap-[5rem] sm:flex-row">
-            <div className="[h-22.3rem] flex w-[22.2rem] flex-col items-center gap-4 px-3 py-[0.62rem]">
+          <div className="xs:flex-col flex w-full items-center justify-start gap-[5rem] md:flex-row">
+            <div className="xs:full flex flex-col items-center gap-4 px-3 py-[0.62rem] md:w-[22.2rem]">
               <img src={tourismTamplate} alt="" className="self-stretch" />
               <div className="flex flex-1 items-center justify-between self-stretch">
                 <div className="flex flex-col items-start">

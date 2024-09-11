@@ -39,7 +39,7 @@ module.exports = {
         dotted: "url('./src/assets/dotted-background.png')",
       },
       screens: {
-        xs: "370px",
+        xs: "320px",
       },
     },
   },

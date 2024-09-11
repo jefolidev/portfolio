@@ -6,7 +6,7 @@ import { LinkedinIcon } from "../../../components/ui/icons/linkedin-icon";
 export function ContactMe() {
   return (
     <div className="bg-lightPrimary h-[456px] w-full select-none p-3 transition-colors dark:bg-primary">
-      <div className="bg-lightSecondary xs:px-8 xs:grid-cols-1 xs:justify-center grid h-full w-full items-center rounded-lg transition-colors sm:grid-cols-2 sm:justify-between sm:px-48 dark:bg-secondary">
+      <div className="bg-lightSecondary xs:h-[29rem] xs:px-8 xs:gap-32 xs:py-4 xs:grid-cols-1 xs:justify-center grid h-full w-full items-center rounded-lg transition-colors sm:grid-cols-2 sm:justify-between lg:px-48 dark:bg-secondary">
         <div className="xs:-mb-28 space-y-2.5 sm:mb-0">
           <h1 className="font-geo text-lightFonts text-4xl font-bold transition-colors sm:w-[336px] dark:text-white">
             Gostou do meu trabalho?
@@ -15,7 +15,7 @@ export function ContactMe() {
             Entre em contato comigo nas minhas redes sociais!
           </span>
         </div>
-        <div className="grid-flow grid grid-cols-2 gap-2">
+        <div className="xs:flex xs:flex-col xs:gap-2 sm:grid sm:grid-cols-2">
           <a
             href="https://www.linkedin.com/in/jeferson-franco-1349062b0/"
             target="_blank"

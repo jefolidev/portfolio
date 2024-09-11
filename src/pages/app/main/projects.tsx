@@ -6,8 +6,8 @@ export function ProjectsMain() {
   const navigate = useNavigate();
   navigate("/projects");
   return (
-    <div className="via-lightPrimary from-lightPrimary flex h-screen w-full flex-col items-center justify-center bg-gradient-to-t to-slate-100 px-2 transition-colors dark:bg-primary dark:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] dark:from-secondary dark:via-primary dark:to-primary">
-      <div className="xs:px-2 xs:py-20 self-start sm:px-40 sm:py-16">
+    <div className="via-lightPrimary from-lightPrimary flex h-full w-full flex-col items-center justify-center bg-gradient-to-t to-slate-100 px-2 transition-colors dark:bg-primary dark:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] dark:from-secondary dark:via-primary dark:to-primary">
+      <div className="xs:px-2 xs:py-20 self-start sm:px-20 sm:py-16 lg:px-40">
         <h1 className="text-lightFonts py-4 font-geologica text-5xl font-bold tracking-tight transition-colors dark:text-white">
           Meus Projetos
         </h1>
@@ -19,9 +19,9 @@ export function ProjectsMain() {
         </span>
       </div>
 
-      <div className="bg-lightSecondary xs:p-2 flex max-h-96 w-full flex-col justify-center rounded-lg transition-colors sm:h-full dark:bg-secondary">
+      <div className="bg-lightSecondary xs:p-2 flex w-full flex-col justify-center rounded-lg transition-colors sm:h-full md:max-h-96 dark:bg-secondary">
         <div className="flex sm:flex-col sm:space-y-6 sm:self-center">
-          <div className="xs:hidden sm:block">
+          <div className="xs:hidden md:block">
             <ButtonPrimary
               text="Ver todos"
               onClick={() => navigate("/projects")}

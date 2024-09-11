@@ -11,7 +11,7 @@ import timeline from "../../assets/timeline.svg";
 export function Experiences() {
   return (
     <div className="bg-lightPrimary xs:h-full xs:px-2 flex min-h-screen flex-col items-center justify-center space-y-5 transition-colors sm:h-[900px] sm:w-full dark:bg-primary">
-      <div className="xs:py-16 xs:px-5 self-start sm:px-40 sm:py-12">
+      <div className="xs:py-16 xs:px-5 self-start sm:px-20 sm:py-12 lg:px-40">
         <h1 className="text-lightFonts py-4 font-geologica text-5xl font-bold dark:text-white">
           Minhas experiências
         </h1>
@@ -21,7 +21,7 @@ export function Experiences() {
           deploy. Como poderei ajudar na sua empresa?
         </span>
       </div>
-      <div className="xs:pl-2 xs:items-start xs:gap-3 flex h-full w-full sm:items-center sm:justify-start sm:gap-5 sm:pl-40">
+      <div className="xs:pl-2 xs:items-start xs:gap-3 flex h-full w-full sm:items-center sm:justify-start sm:gap-5 md:pl-12 lg:pl-40">
         <img src={timeline} className="xs:hidden h-[620px] sm:block" />
 
         <div className="xs:gap-8 flex flex-col sm:gap-3">
