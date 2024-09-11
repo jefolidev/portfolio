@@ -19,7 +19,7 @@
 
 ## 🎈 Link
 
-<a href="https://jefoli.dev.com"> Ir para o site </a>
+<a href="https://jefoliv.vercel.app"> Ir para o site </a>
 
 ## 👨‍💻 Tecnologias utilizadas
 
