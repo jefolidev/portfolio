@@ -6,7 +6,7 @@ export function ProjectsMain() {
   const navigate = useNavigate();
   navigate("/projects");
   return (
-    <div className="via-lightPrimary from-lightPrimary flex h-full w-full flex-col items-center justify-center bg-gradient-to-t to-slate-100 px-2 transition-colors dark:bg-primary dark:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] dark:from-secondary dark:via-primary dark:to-primary">
+    <div className="via-lightPrimary from-lightPrimary flex min-h-full w-full flex-col items-center justify-center bg-gradient-to-t to-slate-100 px-2 transition-colors dark:bg-primary dark:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] dark:from-secondary dark:via-primary dark:to-primary">
       <div className="xs:px-2 xs:py-20 self-start sm:px-20 sm:py-16 lg:px-40">
         <h1 className="text-lightFonts py-4 font-geologica text-5xl font-bold tracking-tight transition-colors dark:text-white">
           Meus Projetos
@@ -19,7 +19,7 @@ export function ProjectsMain() {
         </span>
       </div>
 
-      <div className="bg-lightSecondary flex w-full flex-col items-center justify-center rounded-lg py-12 transition-colors sm:h-full md:max-h-96 dark:bg-secondary">
+      <div className="bg-lightSecondary flex w-full flex-col items-center justify-center rounded-lg py-12 transition-colors sm:min-h-full md:max-h-96 dark:bg-secondary">
         <div className="xs:p-2 flex sm:flex-col sm:space-y-6 sm:self-center">
           <div className="xs:hidden md:block">
             <ButtonPrimary
@@ -28,7 +28,7 @@ export function ProjectsMain() {
             />
           </div>
 
-          <div className="xs:grid-cols-1 xs:gap-1 xs:w-full grid h-full items-center sm:grid-flow-col sm:grid-rows-2 sm:gap-5">
+          <div className="xs:grid-cols-1 xs:gap-1 xs:w-full grid min-h-full items-center sm:grid-flow-col sm:grid-rows-2 sm:gap-5">
             <ProjectCard
               name="Net.ly"
               description="Landing Page, Rede Social"

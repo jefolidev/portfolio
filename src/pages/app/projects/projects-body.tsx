@@ -20,7 +20,7 @@ import arrowRight from "../../../assets/arrow-right.svg";
 export function ProjectsBody() {
   const navigate = useNavigate();
   return (
-    <div className="bg-lightPrimary flex h-full w-full flex-col px-3 py-8 dark:bg-primary">
+    <div className="bg-lightPrimary flex min-h-full w-full flex-col px-3 py-8 dark:bg-primary">
       <div className="bg-lightSecondary xs:px-3 xs:py-5 flex h-[100%] flex-col gap-16 rounded-lg sm:px-16 sm:py-10 dark:bg-secondary">
         <MyProjectsCard
           name="Net.ly"

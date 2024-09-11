@@ -1,6 +1,6 @@
 export function ProjectsHome() {
   return (
-    <div className="bg-lightPrimary h-full w-full py-5 dark:bg-primary">
+    <div className="bg-lightPrimary min-h-full w-full py-5 dark:bg-primary">
       <div className="xs:px-5 lg:pl-20 lg:pr-40 lg:pt-20">
         <div className="flex items-center gap-4">
           <div className="bg-lightFonts h-1 w-1 rounded-full dark:bg-gray-300" />

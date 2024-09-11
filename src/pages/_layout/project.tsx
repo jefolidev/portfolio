@@ -25,7 +25,7 @@ export function ProjectLayout() {
     <>
       <Helmet title={project.name} />
       <NavBar />
-      <div className="bg-lightPrimary h-full w-full px-16 py-2 transition-colors dark:bg-primary">
+      <div className="bg-lightPrimary min-h-full w-full px-16 py-2 transition-colors dark:bg-primary">
         <div className="flex flex-col gap-5 pt-20">
           <h1 className="text-lightFonts font-geologica text-5xl font-bold transition-colors dark:text-white">
             {project.name}

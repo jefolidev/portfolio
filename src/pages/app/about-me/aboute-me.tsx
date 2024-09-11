@@ -8,7 +8,7 @@ export function AboutMe() {
     <div>
       <Helmet title="Sobre mim" />
       <NavBar />
-      <div className="bg-lightPrimary h-full w-full px-16 py-16 transition-colors dark:bg-primary">
+      <div className="bg-lightPrimary min-h-full w-full px-16 py-16 transition-colors dark:bg-primary">
         <div className="mb-12 flex items-center gap-4">
           <div className="bg-lightFonts h-1 w-1 rounded-full dark:bg-gray-300" />
           <span className="text-lightFonts font-maven dark:text-gray-300">
