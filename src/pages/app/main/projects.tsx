@@ -19,8 +19,8 @@ export function ProjectsMain() {
         </span>
       </div>
 
-      <div className="bg-lightSecondary xs:p-2 flex w-full flex-col justify-center rounded-lg transition-colors sm:h-full md:max-h-96 dark:bg-secondary">
-        <div className="flex sm:flex-col sm:space-y-6 sm:self-center">
+      <div className="bg-lightSecondary flex w-full flex-col items-center justify-center rounded-lg py-12 transition-colors sm:h-full md:max-h-96 dark:bg-secondary">
+        <div className="xs:p-2 flex sm:flex-col sm:space-y-6 sm:self-center">
           <div className="xs:hidden md:block">
             <ButtonPrimary
               text="Ver todos"
