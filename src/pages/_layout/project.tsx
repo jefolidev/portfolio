@@ -10,6 +10,7 @@ import { NetlyProjectPage } from "../app/projects/pages/netly";
 import { TurismoProjectPage } from "../app/projects/pages/tourism";
 
 import { Helmet } from "react-helmet-async";
+import { InOrbitPage } from "../app/projects/pages/inorbit";
 import gitHubIcon from "../assets/github-icon.svg";
 
 export function ProjectLayout() {
@@ -25,12 +26,12 @@ export function ProjectLayout() {
     <>
       <Helmet title={project.name} />
       <NavBar />
-      <div className="bg-lightPrimary min-h-full w-full px-16 py-2 transition-colors dark:bg-primary">
+      <div className="min-h-full w-full bg-lightPrimary px-16 py-2 transition-colors dark:bg-primary">
         <div className="flex flex-col gap-5 pt-20">
-          <h1 className="text-lightFonts font-geologica text-5xl font-bold transition-colors dark:text-white">
+          <h1 className="font-geologica text-5xl font-bold text-lightFonts transition-colors dark:text-white">
             {project.name}
           </h1>
-          <span className="text-lightSubtitles font-maven text-lg dark:text-gray-400">
+          <span className="font-maven text-lg text-lightSubtitles dark:text-gray-400">
             {project.description}
           </span>
           <a href={project.repo} target="_blank" rel="noopener noreferrer">
@@ -41,6 +42,7 @@ export function ProjectLayout() {
         {projectId === "tourism" ? <TurismoProjectPage /> : null}
         {projectId === "matform" ? <MatriculaProjectPage /> : null}
         {projectId === "gitsearch" ? <GitHubProjectPage /> : null}
+        {projectId === "inorbit" ? <InOrbitPage /> : null}
       </div>
     </>
   );

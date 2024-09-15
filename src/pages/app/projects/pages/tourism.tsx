@@ -9,7 +9,7 @@ export function TurismoProjectPage() {
       <span className="text-lightSubtitles font-maven font-medium transition-colors dark:text-gray-200">
         No meu recente desafio prático da Rocketseat, desenvolvi um site de
         turismo usando apenas HTML e CSS. O projeto, intitulado "Sua Próxima
-        Viajem", apresenta uma interface clean e intuitiva para os usuários que
+        viagem", apresenta uma interface clean e intuitiva para os usuários que
         desejam descobrir e planejar suas viagens. O layout inclui seções
         atraentes para mostrar destinos e informações úteis sobre viagem,
         destacando-se pela simplicidade e funcionalidade.
@@ -17,7 +17,7 @@ export function TurismoProjectPage() {
       <img src={tourism2} />
       <span className="text-lightSubtitles font-maven font-medium transition-colors dark:text-gray-200">
         O desafio da Rocketseat foi uma ótima oportunidade para criar um projeto
-        de turismo totalmente baseado em HTML e CSS. O site "Sua Próxima Viajem"
+        de turismo totalmente baseado em HTML e CSS. O site "Sua Próxima viagem"
         foi projetado para oferecer uma experiência de usuário fluida e
         visualmente agradável. Com uma paleta de cores inspirada em paisagens
         naturais e um layout que prioriza a clareza, o site facilita a navegação

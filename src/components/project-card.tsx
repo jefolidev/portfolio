@@ -4,22 +4,22 @@ import { ButtonType } from "./ui/button-secondary";
 interface ProjectCardButton extends ButtonType {
   name: string;
   description: string;
-  buttonColor: string;
+  projectIcon?: React.ReactNode;
 }
 
 export function ProjectCard({
   onClick,
   name,
   description,
-  buttonColor,
+  projectIcon,
 }: ProjectCardButton) {
   return (
     <button
-      className="bg-lightButtons hover:border-lightStroke xs:flex-grow flex h-20 select-none items-center justify-between rounded-lg border-2 border-transparent px-4 shadow-lg shadow-gray-700/40 transition-colors hover:border-2 hover:brightness-110 sm:w-72 dark:bg-terciary dark:shadow-black/20 dark:hover:border-[#9d98a996] dark:hover:brightness-110"
+      className="flex h-20 select-none items-center justify-between rounded-lg border-2 border-transparent bg-lightButtons px-4 shadow-lg shadow-gray-700/40 transition-colors hover:border-2 hover:border-lightStroke hover:brightness-110 dark:bg-terciary dark:shadow-black/20 dark:hover:border-[#9d98a996] dark:hover:brightness-110 xs:flex-grow sm:w-72"
       onClick={onClick}
     >
-      <div className="flex gap-4">
-        <div className={`h-10 w-10 rounded-full ${buttonColor}`} />
+      <div className="flex gap-4 items-center">
+        {projectIcon}
         <div className="flex flex-col items-start">
           <h1 className="font-sm font-geologica font-medium text-white dark:text-gray-50">
             {name}
