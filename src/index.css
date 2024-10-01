@@ -5,5 +5,5 @@
 :root {
   --swiper-pagination-color: #4f4f4f;
   --swiper-pagination-bullet-inactive-color: #606060;
-  --swiper-pagination-bullet-inactive-opacity: .3;
+  --swiper-pagination-bullet-inactive-opacity: 0.3;
 }

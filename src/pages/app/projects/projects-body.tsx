@@ -1,13 +1,17 @@
 import { MyProjectsCard } from "../../../components/projects-card";
 
-import netlyMain from "./assets/netly/netly-main.png";
-
+import convertMockup from "./assets/convertor/convert-mockup.png";
 import gitMain from "./assets/git-searcher/git-main.png";
+import literaryMockup from "./assets/literary-charms/literary-charms-mockup.png";
+import netlyMain from "./assets/netly/netly-main.png";
+import quicklistMockup from "./assets/quicklist/quicklist-mockup.png";
+import snitapMockup from "./assets/snitap/snitap-mockup.png";
+import zingenMockup from "./assets/zingen/zingen-mockup.png";
 
 import inorbitMain from "./assets/inorbit/vazio.png";
 
-import formMat from "./assets/form-matricula/form-main.png";
-import tourismTamplate from "./assets/tourism/tourism-cape.png";
+import formMat from "./assets/form-matricula/matricula-mockup.png";
+import tourismTamplate from "./assets/tourism/tourism-mockup.png";
 
 import { useNavigate } from "react-router-dom";
 
@@ -49,13 +53,35 @@ export function ProjectsBody() {
               Outros Projetos
             </h1>
           </div>
-          <div className="flex w-full items-center justify-start gap-[5rem] xs:flex-col md:flex-row">
+          <div className="flex w-full items-center justify-start gap-[5rem] md:flex-row">
             <Swiper
               slidesPerView={3}
               modules={[Pagination]}
               pagination={{
                 dynamicBullets: true,
                 clickable: true,
+              }}
+              className="sm:py-4"
+              breakpoints={{
+                320: {
+                  slidesPerView: 1,
+                  spaceBetween: 4,
+                },
+                640: {
+                  slidesPerView: 2,
+                  spaceBetween: 1,
+                },
+                768: {
+                  slidesPerView: 2,
+                  spaceBetween: 250,
+                },
+                1024: {
+                  slidesPerView: 3,
+                  spaceBetween: 250,
+                },
+                1280: {
+                  spaceBetween: 60,
+                },
               }}
             >
               <SwiperSlide>
@@ -76,18 +102,42 @@ export function ProjectsBody() {
               </SwiperSlide>
               <SwiperSlide>
                 <OtherProjects
-                  image={formMat}
-                  name="Formulário de Matrícula"
+                  image={zingenMockup}
+                  name="Zingen"
                   type="Landing Page"
-                  path="matform"
+                  path="zingen"
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <OtherProjects
-                  image={formMat}
-                  name="Formulário de Matrícula"
+                  image={snitapMockup}
+                  name="Snitap"
                   type="Landing Page"
-                  path="matform"
+                  path="snitap"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <OtherProjects
+                  image={convertMockup}
+                  name="Convert"
+                  type="Aplicação Web"
+                  path="convert"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <OtherProjects
+                  image={quicklistMockup}
+                  name="Quicklist"
+                  type="Aplicação Web"
+                  path="quicklist"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <OtherProjects
+                  image={literaryMockup}
+                  name="Literary Charms"
+                  type="Landing Page"
+                  path="literary-charms"
                 />
               </SwiperSlide>
             </Swiper>

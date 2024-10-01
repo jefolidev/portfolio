@@ -8,6 +8,17 @@ type MyProjectsCardTypes = {
 };
 
 export function MyProjectsCard(data: MyProjectsCardTypes) {
+  function trimWithPoints() {
+    if (data.description.length > 50) {
+      if (window.innerWidth <= 550) {
+        return data.description.substring(0, 60) + "...";
+      } else if (window.innerWidth <= 1024) {
+        return data.description.substring(0, 140) + "...";
+      }
+    }
+    return data.description;
+  }
+
   return (
     <div className="flex flex-col items-center justify-around gap-4 rounded-md bg-lightPrimary p-4 shadow-2xl transition-colors dark:bg-cardPrimary">
       <div className="flex w-full flex-1 gap-5 rounded-lg border-2 border-strokeDefault/30 bg-lightTerciary/5 px-4 transition-colors dark:bg-[#1E1B24] lg:items-center lg:justify-center lg:pt-8">
@@ -26,9 +37,7 @@ export function MyProjectsCard(data: MyProjectsCardTypes) {
             {data.name}
           </h1>
           <span className="max-h-[58rem] text-left font-maven text-lg text-lightSubtitles transition-colors dark:text-gray-400">
-            {data.description.length > 50 && window.innerWidth <= 550
-              ? data.description.substring(0, 60) + "..."
-              : data.description}
+            {trimWithPoints()}
           </span>
         </div>
         <div className="p-2 xs:hidden lg:block">
