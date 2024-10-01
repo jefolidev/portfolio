@@ -13,6 +13,12 @@ import { useNavigate } from "react-router-dom";
 
 import { OtherProjects } from "../../../components/other-projects";
 
+import "swiper/css";
+import "swiper/css/pagination";
+
+import { Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+
 export function ProjectsBody() {
   const navigate = useNavigate();
   return (
@@ -44,18 +50,47 @@ export function ProjectsBody() {
             </h1>
           </div>
           <div className="flex w-full items-center justify-start gap-[5rem] xs:flex-col md:flex-row">
-            <OtherProjects
-              image={tourismTamplate}
-              name="Página de Turismo"
-              type="Landing Page"
-              path="tourism"
-            />
-            <OtherProjects
-              image={formMat}
-              name="Formulário de Matrícula"
-              type="Landing Page"
-              path="matform"
-            />
+            <Swiper
+              slidesPerView={3}
+              modules={[Pagination]}
+              pagination={{
+                dynamicBullets: true,
+                clickable: true,
+              }}
+            >
+              <SwiperSlide>
+                <OtherProjects
+                  image={tourismTamplate}
+                  name="Página de Turismo"
+                  type="Landing Page"
+                  path="tourism"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <OtherProjects
+                  image={formMat}
+                  name="Formulário de Matrícula"
+                  type="Landing Page"
+                  path="matform"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <OtherProjects
+                  image={formMat}
+                  name="Formulário de Matrícula"
+                  type="Landing Page"
+                  path="matform"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <OtherProjects
+                  image={formMat}
+                  name="Formulário de Matrícula"
+                  type="Landing Page"
+                  path="matform"
+                />
+              </SwiperSlide>
+            </Swiper>
           </div>
         </div>
       </div>

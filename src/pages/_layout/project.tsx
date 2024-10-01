@@ -10,7 +10,13 @@ import { NetlyProjectPage } from "../app/projects/pages/netly";
 import { TurismoProjectPage } from "../app/projects/pages/tourism";
 
 import { Helmet } from "react-helmet-async";
+import { ButtonSecondary } from "../../components/ui/button-secondary";
+import { ConvertPage } from "../app/projects/pages/convert";
 import { InOrbitPage } from "../app/projects/pages/inorbit";
+import { LiteraryCharmsPage } from "../app/projects/pages/literary-charms";
+import { QuicklistPage } from "../app/projects/pages/quicklist";
+import { SnitapPage } from "../app/projects/pages/snitap";
+import { ZingenPage } from "../app/projects/pages/zingen";
 import gitHubIcon from "../assets/github-icon.svg";
 
 export function ProjectLayout() {
@@ -34,15 +40,25 @@ export function ProjectLayout() {
           <span className="font-maven text-lg text-lightSubtitles dark:text-gray-400">
             {project.description}
           </span>
-          <a href={project.repo} target="_blank" rel="noopener noreferrer">
-            <ButtonPrimary text="Repositório" iconPath={gitHubIcon} />
-          </a>
+          <div className="flex gap-2">
+            <a href={project.repo} target="_blank" rel="noopener noreferrer">
+              <ButtonPrimary text="Repositório" iconPath={gitHubIcon} />
+            </a>
+            <a href={project.site} target="_blank" rel="noopener noreferrer">
+              <ButtonSecondary text="Acessar o site" />
+            </a>
+          </div>
         </div>
         {projectId === "netly" ? <NetlyProjectPage /> : null}
         {projectId === "tourism" ? <TurismoProjectPage /> : null}
         {projectId === "matform" ? <MatriculaProjectPage /> : null}
         {projectId === "gitsearch" ? <GitHubProjectPage /> : null}
         {projectId === "inorbit" ? <InOrbitPage /> : null}
+        {projectId === "zingen" ? <ZingenPage /> : null}
+        {projectId === "literary-charms" ? <LiteraryCharmsPage /> : null}
+        {projectId === "snitap" ? <SnitapPage /> : null}
+        {projectId === "quicklist" ? <QuicklistPage /> : null}
+        {projectId === "convert" ? <ConvertPage /> : null}
       </div>
     </>
   );

@@ -36,9 +36,9 @@ export function ProjectsMain() {
               onClick={() => navigate("/projects/netly")}
             />
             <ProjectCard
-              name="Git Searcher"
-              description="Aplicação Web"
-              onClick={() => navigate("/projects/gitsearch")}
+              name="Snitap"
+              description="Landing Page"
+              onClick={() => navigate("/projects/snitap")}
             />
             <ProjectCard
               name="Form. de Matrícula"
@@ -46,9 +46,14 @@ export function ProjectsMain() {
               onClick={() => navigate("/projects/matform")}
             />
             <ProjectCard
-              name="Página de Turismo"
+              name="Literary Charms"
               description="Landing Page"
-              onClick={() => navigate("/projects/tourism")}
+              onClick={() => navigate("/projects/literary-charms")}
+            />
+            <ProjectCard
+              name="Convertor"
+              description="Aplicação Web"
+              onClick={() => navigate("/projects/convert")}
             />
             <ProjectCard
               name="in.orbit"
