@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { ScrollRestoration } from "react-router-dom";
 import { NavBar } from "../../../components/navbar";
 import { Experiences } from "./experience";
 import HowCanIHelp from "./help";
@@ -14,6 +15,7 @@ export function PortfolioRoot() {
       <ProjectsMain />
       <Experiences />
       <HowCanIHelp />
+      <ScrollRestoration />
     </>
   );
 }
