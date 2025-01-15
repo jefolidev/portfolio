@@ -1,4 +1,4 @@
-export const Typescript = (props) => (
+export const Typescript = (props:any) => (
   <svg
     width="20px"
     height="20px"

@@ -1,6 +1,6 @@
 import { AltBox } from "../alt-box";
 
-export const DockerIcon = (props) => (
+export const DockerIcon = (props: any) => (
   <div className="group/docker relative">
 
   <svg
