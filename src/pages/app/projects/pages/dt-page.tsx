@@ -1,26 +1,15 @@
-import defaultPage from "../assets/convertor/convert-default.png";
-import dollarPage from "../assets/convertor/convert-dolar.png";
+import defaultPage from "../assets/dt-cash/dtcash-main.png";
 
 export function DTPage() {
   return (
     <div className="flex flex-col gap-12 py-16">
       <img src={defaultPage} />
       <span className="font-maven font-medium text-lightSubtitles transition-colors dark:text-gray-200">
-        Este projeto é um conversor de moedas, que permite converter valores em
-        reais para outras moedas de forma simples e rápida. A interface foi
-        desenvolvida com HTML e CSS, garantindo um design responsivo e adaptável
-        a diferentes dispositivos. O layout é limpo e funcional, pensado para
-        facilitar a interação do usuário ao inserir valores e escolher a moeda
-        desejada.
-      </span>
-      <img src={dollarPage} />
-      <span className="font-maven font-medium text-lightSubtitles transition-colors dark:text-gray-200">
-        A lógica por trás das conversões foi implementada em JavaScript,
-        utilizando cálculos precisos para realizar a conversão de moedas. Além
-        disso, foram aplicadas animações sutis para tornar a experiência mais
-        fluida, como transições ao exibir os resultados. O projeto combina
-        simplicidade com eficiência, tornando o processo de conversão prático e
-        visualmente atraente.
+        Mais um projeto em que realizei pela Rocketseat onde utilizei JSON
+        Server para simular uma Rest API em que guarda e monitora os valores de
+        entrada e saída de uma determinada renda, fazendo cálculos sobre a renda
+        também. Esse projeto foi muito útil para retomar alguns conceitos de
+        requisições e manipulação das respostas de uma API.
       </span>
     </div>
   );
