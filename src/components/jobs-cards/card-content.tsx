@@ -1,6 +1,6 @@
 export type CardContentTypes = {
   firstMessage: string;
-  secondMessage: string;
+  secondMessage?: string;
 };
 
 export function CardContent(data: CardContentTypes) {
@@ -10,9 +10,9 @@ export function CardContent(data: CardContentTypes) {
         <li>
           <span>{data.firstMessage}</span>
         </li>
-        <li>
+       {data.secondMessage !== undefined ?(  <li>
           <span>{data.secondMessage}</span>
-        </li>
+        </li>) : ""}
       </ol>
     </div>
   );

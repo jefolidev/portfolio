@@ -1,4 +1,4 @@
-export const projectsData = [
+export const frontProjectsData = [
   {
     id: "netly",
     name: "Netly",
@@ -79,4 +79,31 @@ export const projectsData = [
     repo: "https://github.com/jefolidev/convertor",
     site: "https://jefolidev.github.io/convertor",
   },
-];
+  {
+    id: "dt-cash",
+    name: "DT Cash",
+    description:
+      "DT Cash é um gestor de despesas em que você pode adicionar seu saldo, entradas e saídas monetárias, com isso, o site fará um cálculo de suas despesas.",
+    repo: "https://github.com/jefolidev/dt-cash",
+    site: "https://jefolidev.github.io/dt-cash",
+  },
+  {
+    id: "reflexa",
+    name: "Reflexa",
+    description:
+      "DT Cash é um gestor de despesas em que você pode adicionar seu saldo, entradas e saídas monetárias, com isso, o site fará um cálculo de suas despesas.",
+    repo: "https://github.com/jefolidev/reflexa",
+    site: "https://github.com/jefolidev/reflexa",
+  },
+
+]
+
+export const backProjectsData = [
+  {
+    id: "taskapi",
+    name: "Api de Tasks",
+    description:
+      "Uma API de tarefas que converte os dados para um CSV (planilha).",
+    repo: "https://github.com/jefolidev/tasks-api-rocketseat",
+  },
+]

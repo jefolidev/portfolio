@@ -2,7 +2,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { NavBar } from "../../components/navbar";
 
 import { ButtonPrimary } from "../../components/ui/button-primary";
-import { projectsData } from "../../data/projects";
+import { frontProjectsData } from "../../data/projects";
 import { NotFound } from "../404";
 import { GitHubProjectPage } from "../app/projects/pages/gitsearch";
 import { MatriculaProjectPage } from "../app/projects/pages/matform";
@@ -12,9 +12,11 @@ import { TurismoProjectPage } from "../app/projects/pages/tourism";
 import { Helmet } from "react-helmet-async";
 import { ButtonSecondary } from "../../components/ui/button-secondary";
 import { ConvertPage } from "../app/projects/pages/convert";
+import { DTPage } from "../app/projects/pages/dt-page";
 import { InOrbitPage } from "../app/projects/pages/inorbit";
 import { LiteraryCharmsPage } from "../app/projects/pages/literary-charms";
 import { QuicklistPage } from "../app/projects/pages/quicklist";
+import { Reflexa } from "../app/projects/pages/reflexa";
 import { SnitapPage } from "../app/projects/pages/snitap";
 import { ZingenPage } from "../app/projects/pages/zingen";
 import gitHubIcon from "../assets/github-icon.svg";
@@ -22,11 +24,12 @@ import gitHubIcon from "../assets/github-icon.svg";
 export function ProjectLayout() {
   const { projectId } = useParams();
 
-  const project = projectsData.find((p) => p.id === projectId);
+  const project = frontProjectsData.find((p) => p.id === projectId);
   if (!project) return <NotFound />;
 
   const navigate = useNavigate();
-  navigate("/projects");
+
+    navigate("/projects");
 
   return (
     <>
@@ -49,6 +52,7 @@ export function ProjectLayout() {
             </a>
           </div>
         </div>
+
         {projectId === "netly" ? <NetlyProjectPage /> : null}
         {projectId === "tourism" ? <TurismoProjectPage /> : null}
         {projectId === "matform" ? <MatriculaProjectPage /> : null}
@@ -59,6 +63,8 @@ export function ProjectLayout() {
         {projectId === "snitap" ? <SnitapPage /> : null}
         {projectId === "quicklist" ? <QuicklistPage /> : null}
         {projectId === "convert" ? <ConvertPage /> : null}
+        {projectId === "dt-cash" ? <DTPage /> : null}
+        {projectId === "reflexa" ? <Reflexa /> : null}
       </div>
     </>
   );

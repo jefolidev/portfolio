@@ -3,9 +3,9 @@ export type CardHeaderTypes = {
   role: string;
   startMonth: string;
   startYear: number;
-  endMonth: string;
-  endYear: number;
-  monthCount: number;
+  endMonth?: string;
+  endYear?: number;
+  monthCount?: number;
 };
 
 export function CardHeader(data: CardHeaderTypes) {
@@ -24,7 +24,7 @@ export function CardHeader(data: CardHeaderTypes) {
           {data.startMonth} {data.startYear} — {data.endMonth} {data.endYear}
         </h1>
         <span className="text-lightSubtitles font-geologica text-sm font-thin transition-colors dark:text-gray-300">
-          {data.monthCount} meses
+          {data.monthCount === undefined ? '' : `${data.monthCount} meses`}
         </span>
       </div>
     </div>

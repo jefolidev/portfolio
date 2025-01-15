@@ -1,17 +1,17 @@
 import { JobCard } from "../../../components/jobs-cards";
 import { DotNet } from "../../../components/ui/dot-net";
+import { DockerIcon } from "../../../components/ui/icons/docker-icon";
 import { Firebird } from "../../../components/ui/icons/firebird-icon";
 import { NodeIcon } from "../../../components/ui/icons/node-icon";
 import { PostgressIcon } from "../../../components/ui/icons/postgress-icon";
 import { PrismaIcon } from "../../../components/ui/icons/prisma-icon";
 import { ReactIcon } from "../../../components/ui/icons/react-icon";
 import { TailWindIcon } from "../../../components/ui/icons/tailwind-icon";
-import timeline from "../../assets/timeline.svg";
 
 export function Experiences() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center space-y-5 bg-lightPrimary transition-colors dark:bg-primary xs:flex-1 xs:px-2 sm:h-[900px] sm:w-full">
-      <div className="self-start xs:px-5 xs:py-16 sm:px-20 sm:py-12 lg:px-40">
+    <div className="lg:px-40 flex min-h-screen flex-col items-start justify-center space-y-5 bg-lightPrimary transition-colors dark:bg-primary xs:flex-1 xs:px-2  pb-8">
+      <div className="self-start xs:px-5 xs:py-16 sm:px-20 sm:py-12 lg:px-0 lg:pb-8">
         <h1 className="py-4 font-geologica text-5xl font-bold text-lightFonts dark:text-white">
           Minhas experiências
         </h1>
@@ -21,10 +21,55 @@ export function Experiences() {
           deploy. Como poderei ajudar na sua empresa?
         </span>
       </div>
-      <div className="flex min-h-full w-full xs:items-start xs:gap-3 xs:pl-2 sm:items-center sm:justify-start sm:gap-5 md:pl-12 lg:pl-40">
-        <img src={timeline} className="h-[620px] xs:hidden sm:block" />
+      <div className="flex min-h-full xs:items-start xs:gap-3 xs:pl-2 sm:items-center sm:justify-start sm:gap-5 ">
+        {/* <img src={timeline} className="h-[620px] xs:hidden sm:block" /> */}
 
         <div className="flex flex-col xs:gap-8 sm:gap-3">
+
+          <div className="flex flex-col">
+          <span className="font-maven font-medium text-lightSubtitles transition-colors dark:text-gray-400 xs:hidden xs:text-sm sm:block">
+            Contratado como{" "}
+            <p className="inline font-semibold text-lightFonts transition-colors dark:text-white">
+              Estagiário Desenvolvedor Full Stack
+            </p>{" "}
+            em
+            <p className="inline font-semibold text-lightFonts transition-colors dark:text-white">
+              {" "}
+              2024
+            </p>
+          </span>
+          <JobCard.Root>
+            <JobCard.Header
+              name="Mercado Pinheiro"
+              role="Estagiário Dev. Full Stack"
+              startMonth="Dezembro"
+              startYear={2024}
+              endMonth="Agora"
+              // endYear={2024}
+              // monthCount={}
+            />
+            <JobCard.Content
+              firstMessage="Desenvolvi uma aplicação completa para projetar os parceiros da empresa e os benefícios oferecidos, resultando em uma melhoria na produtividade dos envolvidos."
+              // secondMessage="Tornei o software muito mais coeso e limpo, seguindo conceitos do SOLID e tornando o código mais legível e enxuto."
+            />
+            <JobCard.Footer
+              location="Fortaleza"
+              modality="Presencial"
+              money={1200}
+              children={
+                <>
+                  <ReactIcon />
+                  <NodeIcon />
+                  <DockerIcon />
+                  <PrismaIcon />
+                  <PostgressIcon />
+                </>
+              }
+            />
+          </JobCard.Root>
+          </div>
+
+          <div className="flex flex-col ">
           <span className="font-maven font-medium text-lightSubtitles transition-colors dark:text-gray-400 xs:hidden xs:text-sm sm:block">
             Contratado como{" "}
             <p className="inline font-semibold text-lightFonts transition-colors dark:text-white">
@@ -56,15 +101,15 @@ export function Experiences() {
               money={500}
               children={
                 <>
-                  <ReactIcon />
-                  <NodeIcon />
-                  <TailWindIcon />
-                  <PrismaIcon />
-                  <PostgressIcon />
+                   <Firebird />
+                   <DotNet />
                 </>
               }
             />
           </JobCard.Root>
+          </div>
+          <div className="flex flex-col">
+
           <span className="font-maven font-medium text-lightSubtitles dark:text-gray-400 xs:hidden xs:text-sm sm:block">
             Contratado como{" "}
             <p className="inline font-semibold text-lightFonts dark:text-white">
@@ -96,12 +141,17 @@ export function Experiences() {
               money={600}
               children={
                 <>
-                  <Firebird />
-                  <DotNet />
+                  <ReactIcon />
+                  <NodeIcon />
+                  <TailWindIcon />
+                  <PrismaIcon />
+                  <PostgressIcon />
                 </>
               }
             />
           </JobCard.Root>
+          </div>
+
         </div>
       </div>
     </div>

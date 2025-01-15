@@ -19,8 +19,6 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     theme === "light" ? setDarkIcon(<SunIcon />) : setDarkIcon(<MoonIcon />);
   }
 
-  console.log(theme);
-
   return (
     <ThemeContext.Provider value={{ theme, darkIcon, themeChanger }}>
       {children}

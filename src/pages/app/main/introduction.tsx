@@ -17,9 +17,9 @@ export function Introduction() {
           className="h-[149px] w-[149px] rounded-full border-[15px] border-white border-opacity-20 transition-colors dark:border-[#1c192246]"
         />
         <div className="bg-lightSecondary/40 absolute inset-x-5 -bottom-4 flex h-5 w-28 items-center justify-center gap-2 rounded-full backdrop-blur-xl transition-colors dark:bg-[#1c19225e]">
-          <div className="h-1 w-1 rounded-full bg-emerald-500"></div>
-          <span className="text-lightFonts font-jet text-xs transition-colors dark:text-white">
-            Open to work
+          <div className="h-1 w-1 rounded-full bg-yellow-500"></div>
+          <span className="text-lightFonts font-jet text-xs transition-colors dark:text-white ">
+            Let's talk!
           </span>
         </div>
       </div>

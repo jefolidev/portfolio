@@ -57,13 +57,10 @@ export function AboutMe() {
                   Dialogar pra mim é algo essencial, gosto muito de conversar
                 </li>
                 <li className="">
-                  Apesar de exótico, amo estudar, o conceito de aprender algo
+                  Gosto de estudar, o conceito de aprender algo
                   novo me deixa empolgado e me motiva
                 </li>
-                <li className="">
-                  Gosto de ouvir música, sou muito eclético e tem desde mpb até
-                  músicas mais recentes
-                </li>
+               
               </ul>
             </div>
             <img src={illustrationLight} alt="" className="block dark:hidden" />
