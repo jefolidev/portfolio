@@ -29,7 +29,7 @@ export function ProjectsBody() {
       name: "Reflexa",
       type: "Aplicação Web",
       path: "reflexa",
-      image_path: "src/pages/app/projects/assets/tourism/tourism-mockup.png",
+      image_path: "src/pages/app/projects/assets/reflexa/reflexa-mockup.png",
       description:
         "Uma aplicação para monitorar seus sentimentos e organizar metas e trabalhar nelas. ",
         language: ["ts", "react"]
@@ -38,7 +38,7 @@ export function ProjectsBody() {
       name: "DT Cash",
       type: "Aplicação Web",
       path: "dt-cash",
-      image_path: "src/pages/app/projects/assets/tourism/tourism-mockup.png",
+      image_path: "src/pages/app/projects/assets/dt-cash/dtcash-mockup.png",
       description:
         "DT Cash é um gestor de despesas em que você pode adicionar seu saldo, entradas e saídas monetárias, com isso, o site fará um cálculo de suas despesas.",
         language: ["ts", "react"]
@@ -47,7 +47,7 @@ export function ProjectsBody() {
       name: "Net.ly",
       type: "Aplicação Web",
       path: "netly",
-      image_path: "src/pages/app/projects/assets/tourism/tourism-mockup.png",
+      image_path: "src/pages/app/projects/assets/netly/netly-mockup.png",
       description:
         "O net.ly ajuda jogadores de vôlei a encontrar e agendar rachas facilmente. Com avaliações de atletas e locais, você pode escolher os melhores jogos e melhorar seu desempenho ao competir com outros atletas. Organize partidas, acompanhe o calendário e evolua no esporte com feedback direto da comunidade.",
         language: ["ts", "react"]
