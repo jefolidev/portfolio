@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router-dom";
-import { useTheme } from "../contexts/theme-context";
-import { HomeIcon } from "./ui/icons/home-icon";
-import { PerfilIcon } from "./ui/icons/perfil-icon";
-import { ProjectsIcon } from "./ui/icons/projects-icon";
+import { useTheme } from "../../contexts/theme-context";
+import { HomeIcon } from "../ui/icons/home-icon";
+import { PerfilIcon } from "../ui/icons/perfil-icon";
+import { ProjectsIcon } from "../ui/icons/projects-icon";
 
 export function NavBar() {
   const navigate = useNavigate();

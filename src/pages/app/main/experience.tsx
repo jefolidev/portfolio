@@ -1,158 +1,80 @@
+import { useState } from "react";
+import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
+import { useSwipeable } from "react-swipeable";
 import { JobCard } from "../../../components/jobs-cards";
-import { DotNet } from "../../../components/ui/dot-net";
-import { DockerIcon } from "../../../components/ui/icons/docker-icon";
-import { Firebird } from "../../../components/ui/icons/firebird-icon";
-import { NodeIcon } from "../../../components/ui/icons/node-icon";
-import { PostgressIcon } from "../../../components/ui/icons/postgress-icon";
-import { PrismaIcon } from "../../../components/ui/icons/prisma-icon";
-import { ReactIcon } from "../../../components/ui/icons/react-icon";
-import { TailWindIcon } from "../../../components/ui/icons/tailwind-icon";
+import { jobs } from "../../utils/experience/jobs";
 
 export function Experiences() {
-  return (
-    <div className="lg:px-40 flex min-h-screen flex-col items-start justify-center space-y-5 bg-lightPrimary transition-colors dark:bg-primary xs:flex-1 xs:px-2  pb-8">
-      <div className="self-start xs:px-5 xs:py-16 sm:px-20 sm:py-12 lg:px-0 lg:pb-8">
-        <h1 className="py-4 font-geologica text-5xl font-bold text-lightFonts dark:text-white">
-          Minhas experiências
-        </h1>
-        <span className="text-lighSubtitles block h-[41px] max-w-[900px] font-maven text-sm transition-colors dark:text-gray-200">
-          Veja como atuei em vagas passadas e cheque algumas curiosidades em que
-          já coloquei a mão na massa! Desenvolvi, prestei manutenção e fiz
-          deploy. Como poderei ajudar na sua empresa?
-        </span>
-      </div>
-      <div className="flex min-h-full xs:items-start xs:gap-3 xs:pl-2 sm:items-center sm:justify-start sm:gap-5 ">
-        {/* <img src={timeline} className="h-[620px] xs:hidden sm:block" /> */}
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-        <div className="flex flex-col xs:gap-8 sm:gap-3">
+  const goToPrev = () => {
+    setCurrentIndex((prev) => (prev > 0 ? prev - 1 : jobs.length - 1));
+  };
 
-          <div className="flex flex-col">
-          <span className="font-maven font-medium text-lightSubtitles transition-colors dark:text-gray-400 xs:hidden xs:text-sm sm:block">
-            Contratado como{" "}
-            <p className="inline font-semibold text-lightFonts transition-colors dark:text-white">
-              Estagiário Desenvolvedor Full Stack
-            </p>{" "}
-            em
-            <p className="inline font-semibold text-lightFonts transition-colors dark:text-white">
-              {" "}
-              2024
-            </p>
-          </span>
-          <JobCard.Root>
-            <JobCard.Header
-              name="Mercado Pinheiro"
-              role="Estagiário Dev. Full Stack"
-              startMonth="Dezembro"
-              startYear={2024}
-              endMonth="Agora"
-              // endYear={2024}
-              // monthCount={}
-            />
-            <JobCard.Content
-              firstMessage="Desenvolvi uma aplicação completa para projetar os parceiros da empresa e os benefícios oferecidos, resultando em uma melhoria na produtividade dos envolvidos."
-              // secondMessage="Tornei o software muito mais coeso e limpo, seguindo conceitos do SOLID e tornando o código mais legível e enxuto."
-            />
-            <JobCard.Footer
-              location="Fortaleza"
-              modality="Presencial"
-              money={1200}
-              children={
-                <>
-                  <ReactIcon />
-                  <NodeIcon />
-                  <DockerIcon />
-                  <PrismaIcon />
-                  <PostgressIcon />
-                </>
-              }
-            />
+  const goToNext = () => {
+    setCurrentIndex((prev) => (prev < jobs.length - 1 ? prev + 1 : 0));
+  };
+
+
+  const handlers = useSwipeable({
+    onSwipedLeft: goToNext,
+    onSwipedRight: goToPrev,
+    trackMouse: true, // permite swipe com mouse também
+  });
+
+
+ return (
+    <div  {...handlers} className="flex min-h-screen flex-col items-center justify-center bg-lightPrimary dark:bg-primary px-4 py-10 select-none">
+      <h1 className="font-geologica text-4xl sm:text-5xl font-bold text-lightFonts dark:text-white mb-4">
+        Minhas experiências
+      </h1>
+      <p className="text-lightSubtitles dark:text-gray-300 text-center max-w-xl mb-10">
+        Veja como atuei em vagas passadas e cheque algumas curiosidades em que já coloquei a mão na massa!
+      </p>
+
+      {/* Carrossel */}
+      <div className="relative w-full max-w-4xl flex items-center justify-center">
+        {/* Seta esquerda */}
+        <button
+          onClick={goToPrev}
+          className="hidden sm:block absolute left-0 z-10 p-2 rounded-full bg-white dark:bg-zinc-800 shadow hover:bg-zinc-100 dark:hover:bg-zinc-700 transition"
+        >
+          <BiChevronLeft className="w-6 h-6 text-black dark:text-white" />
+        </button>
+
+        {/* Card central */}
+        <div className="w-full h-[420px] flex items-center justify-center transition-all duration-300 ease-in-out">
+
+          <JobCard.Root role={jobs[currentIndex].role} year={jobs[currentIndex].year}>
+            <JobCard.Header {...jobs[currentIndex].header} />
+            <JobCard.Content {...jobs[currentIndex].content} />
+            <JobCard.Footer {...jobs[currentIndex].footer}>
+              {jobs[currentIndex].footer.stack}
+            </JobCard.Footer>
           </JobCard.Root>
-          </div>
-
-          <div className="flex flex-col ">
-          <span className="font-maven font-medium text-lightSubtitles transition-colors dark:text-gray-400 xs:hidden xs:text-sm sm:block">
-            Contratado como{" "}
-            <p className="inline font-semibold text-lightFonts transition-colors dark:text-white">
-              Estagiário Back End
-            </p>{" "}
-            em
-            <p className="inline font-semibold text-lightFonts transition-colors dark:text-white">
-              {" "}
-              2024
-            </p>
-          </span>
-          <JobCard.Root>
-            <JobCard.Header
-              name="JPLM Sistemas"
-              role="Estagiário Backend"
-              startMonth="Abril"
-              startYear={2024}
-              endMonth="Julho"
-              endYear={2024}
-              monthCount={4}
-            />
-            <JobCard.Content
-              firstMessage="Acelerei a experiência dos clientes do produto, adicionando mais precisão na filtragem de produtos retirados para entrega;"
-              secondMessage="Tornei o software muito mais coeso e limpo, seguindo conceitos do SOLID e tornando o código mais legível e enxuto."
-            />
-            <JobCard.Footer
-              location="Fortaleza"
-              modality="Presencial"
-              money={500}
-              children={
-                <>
-                   <Firebird />
-                   <DotNet />
-                </>
-              }
-            />
-          </JobCard.Root>
-          </div>
-          <div className="flex flex-col">
-
-          <span className="font-maven font-medium text-lightSubtitles dark:text-gray-400 xs:hidden xs:text-sm sm:block">
-            Contratado como{" "}
-            <p className="inline font-semibold text-lightFonts dark:text-white">
-              Suporte de TI
-            </p>{" "}
-            em
-            <p className="inline font-semibold text-lightFonts dark:text-white">
-              {" "}
-              2023
-            </p>
-          </span>
-          <JobCard.Root>
-            <JobCard.Header
-              name="Panificadora Panettony"
-              role="Suporte de TI"
-              startMonth="Março"
-              startYear={2023}
-              endMonth="Novembro"
-              endYear={2023}
-              monthCount={9}
-            />
-            <JobCard.Content
-              firstMessage="Melhorei a experiência dos clientes, criando um site onde era possível fazer pedidos por delivery, feedback para a empresa etc;"
-              secondMessage="Criei um ambiente agradável para os clientes, sempre fornecendo o melhor atendimento possível."
-            />
-            <JobCard.Footer
-              location="Fortaleza"
-              modality="Presencial"
-              money={600}
-              children={
-                <>
-                  <ReactIcon />
-                  <NodeIcon />
-                  <TailWindIcon />
-                  <PrismaIcon />
-                  <PostgressIcon />
-                </>
-              }
-            />
-          </JobCard.Root>
-          </div>
-
         </div>
+
+        {/* Seta direita */}
+        <button
+          onClick={goToNext}
+          className="hidden sm:block absolute right-0 z-10 p-2 rounded-full bg-white dark:bg-zinc-800 shadow hover:bg-zinc-100 dark:hover:bg-zinc-700 transition"
+        >
+          <BiChevronRight className="w-6 h-6 text-black dark:text-white" />
+        </button>
+      </div>
+
+      {/* Indicadores (bolinhas) */}
+      <div className="flex gap-2 mt-6">
+        {jobs.map((_, index) => (
+          <div
+            key={index}
+            className={`w-3 h-3 rounded-full ${
+              index === currentIndex
+                ? "bg-primary dark:bg-lightPrimary"
+                : "bg-gray-400 dark:bg-gray-600"
+            } transition`}
+          />
+        ))}
       </div>
     </div>
   );

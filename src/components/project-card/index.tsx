@@ -1,5 +1,5 @@
-import arrowRight from "../assets/arrow-right.svg";
-import { ButtonType } from "./ui/button-secondary";
+import arrowRight from "../../assets/arrow-right.svg";
+import { ButtonType } from "../ui/button-secondary";
 
 interface ProjectCardButton extends ButtonType {
   name: string;

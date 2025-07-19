@@ -1,8 +1,8 @@
 import { FaNodeJs } from "react-icons/fa";
 import { MdCss, MdHtml, MdJavascript } from "react-icons/md";
 import { RiReactjsLine } from "react-icons/ri";
-import arrowRight from "../assets/arrow-right.svg";
-import { Typescript } from "./ui/icons/typescript";
+import arrowRight from "../../assets/arrow-right.svg";
+import { Typescript } from "../ui/icons/typescript";
 
 type VariantType = 'front' | 'back'
 
